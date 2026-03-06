@@ -1,0 +1,25 @@
+{
+  "name": "gameathon-backend",
+  "version": "2.0.0",
+  "description": "Gameathon ML Hackathon Backend — Docker-based model evaluation",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.2.0",
+    "dockerode": "^4.0.4",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "firebase-admin": "^13.4.0",
+    "multer": "^2.0.1",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^7.0.13",
+    "nodemon": "^3.1.11",
+    "tar-fs": "^3.1.1",
+    "uuid": "^11.1.0"
+  }
+}
