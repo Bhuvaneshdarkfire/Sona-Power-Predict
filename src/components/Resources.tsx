@@ -152,7 +152,6 @@ const Resources: React.FC = () => {
                     </div>
                 </section>
 
-<<<<<<< HEAD
                 {/* Local Testing with Docker */}
                 <section>
                     <h2 className="section-heading text-2xl mb-5">🐳 Test Your Model Locally</h2>
@@ -199,7 +198,7 @@ const Resources: React.FC = () => {
                                             Open a terminal in your project folder and run:
                                         </p>
                                         <pre className="card-static p-4 text-xs font-mono text-gray-700 overflow-x-auto bg-gray-50/50 mb-2">
-                                            {`# Run the evaluation container (replace paths as needed)
+{`# Run the evaluation container (replace paths as needed)
 docker run --rm \\
   -v "$(pwd)/mymodelfile.py:/var/mymodelfile.py" \\
   -v "$(pwd)/test_file.csv:/var/test_file.csv" \\
@@ -239,8 +238,6 @@ docker run --rm \\
                     </div>
                 </section>
 
-=======
->>>>>>> fbd3d0173fcc6c9e4862a4132523f8738ae4e0a3
                 {/* Code Examples */}
                 <section>
                     <h2 className="section-heading text-2xl mb-5">Example Submission</h2>
