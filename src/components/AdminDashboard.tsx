@@ -5,7 +5,7 @@ import {
   Megaphone, DollarSign, Send, Plus, Play, Trophy,
   Loader2, AlertCircle, BarChart3, Clock, Search,
   Mail, Eye, ChevronDown, ChevronUp, RefreshCw,
-  FileText, Calendar, Hash, User, Building, Image
+  FileText, Hash, User, Building, Image
 } from 'lucide-react';
 import Modal from './Modal';
 import { getAdminData, saveSetting, postAnnouncement, adminAction, approveTeam, getSponsors, addSponsor, deleteSponsor } from '../services/firestore';

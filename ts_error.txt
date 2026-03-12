@@ -1,0 +1,600 @@
+﻿src/components/AdminDashboard.tsx(8,13): error TS6133: 'Calendar' is declared but its value is never read.
+src/components/AdminDashboard.tsx(51,10): error TS6133: 'expandedMatch' is declared but its value is never read.
+src/components/AdminDashboard.tsx(51,25): error TS6133: 'setExpandedMatch' is declared but its value is never read.
+src/components/ShinyText.tsx(2,73): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/components/ShinyText.tsx(40,21): error TS7006: Parameter 'time' implicitly has an 'any' type.
+src/components/ShinyText.tsx(101,53): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/react-bits-temp/jsrepo.config.ts(1,49): error TS2307: Cannot find module 'jsrepo' or its corresponding type declarations.
+src/react-bits-temp/jsrepo.config.ts(2,24): error TS2307: Cannot find module '@jsrepo/shadcn' or its corresponding type declarations.
+src/react-bits-temp/jsrepo.config.ts(3,64): error TS7016: Could not find a declaration file for module './src/constants/Information'. 'D:/Sona-Power-Predict/src/react-bits-temp/src/constants/Information.js' implicitly has an 'any' type.
+src/react-bits-temp/jsrepo.config.ts(49,18): error TS18046: 'component' is of type 'unknown'.
+src/react-bits-temp/jsrepo.config.ts(50,24): error TS18046: 'component' is of type 'unknown'.
+src/react-bits-temp/jsrepo.config.ts(51,21): error TS18046: 'component' is of type 'unknown'.
+src/react-bits-temp/jsrepo.config.ts(52,24): error TS18046: 'component' is of type 'unknown'.
+src/react-bits-temp/jsrepo.config.ts(53,17): error TS18046: 'component' is of type 'unknown'.
+src/react-bits-temp/jsrepo.config.ts(54,21): error TS18046: 'component' is of type 'unknown'.
+src/react-bits-temp/src/ts-default/Animations/AnimatedContent/AnimatedContent.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/AnimatedContent/AnimatedContent.tsx(3,31): error TS2307: Cannot find module 'gsap/ScrollTrigger' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/Antigravity/Antigravity.tsx(1,44): error TS2307: Cannot find module '@react-three/fiber' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/Antigravity/Antigravity.tsx(3,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/Antigravity/Antigravity.tsx(89,12): error TS7006: Parameter 'state' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Animations/Antigravity/Antigravity.tsx(178,5): error TS2339: Property 'instancedMesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Animations/Antigravity/Antigravity.tsx(179,39): error TS2339: Property 'capsuleGeometry' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Animations/Antigravity/Antigravity.tsx(180,38): error TS2339: Property 'sphereGeometry' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Animations/Antigravity/Antigravity.tsx(181,35): error TS2339: Property 'boxGeometry' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Animations/Antigravity/Antigravity.tsx(182,43): error TS2339: Property 'tetrahedronGeometry' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Animations/Antigravity/Antigravity.tsx(183,7): error TS2339: Property 'meshBasicMaterial' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Animations/Antigravity/Antigravity.tsx(184,5): error TS2339: Property 'instancedMesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Animations/BlobCursor/BlobCursor.tsx(4,18): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/Crosshair/Crosshair.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/Cubes/Cubes.tsx(2,18): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/FadeContent/FadeContent.tsx(3,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/FadeContent/FadeContent.tsx(4,31): error TS2307: Cannot find module 'gsap/ScrollTrigger' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/GhostCursor/GhostCursor.tsx(2,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/GhostCursor/GhostCursor.tsx(3,32): error TS2307: Cannot find module 'three/examples/jsm/postprocessing/EffectComposer.js' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/GhostCursor/GhostCursor.tsx(4,28): error TS2307: Cannot find module 'three/examples/jsm/postprocessing/RenderPass.js' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/GhostCursor/GhostCursor.tsx(5,28): error TS2307: Cannot find module 'three/examples/jsm/postprocessing/ShaderPass.js' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/GhostCursor/GhostCursor.tsx(6,33): error TS2307: Cannot find module 'three/examples/jsm/postprocessing/UnrealBloomPass.js' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/GradualBlur/GradualBlur.tsx(2,23): error TS2307: Cannot find module 'mathjs' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/ImageTrail/ImageTrail.tsx(1,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/ImageTrail/ImageTrail.tsx(62,11): error TS6133: 'DOM' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Animations/ImageTrail/ImageTrail.tsx(176,11): error TS6133: 'container' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Animations/ImageTrail/ImageTrail.tsx(177,11): error TS6133: 'DOM' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Animations/ImageTrail/ImageTrail.tsx(303,11): error TS6133: 'container' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Animations/ImageTrail/ImageTrail.tsx(304,11): error TS6133: 'DOM' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Animations/ImageTrail/ImageTrail.tsx(433,11): error TS6133: 'container' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Animations/ImageTrail/ImageTrail.tsx(434,11): error TS6133: 'DOM' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Animations/ImageTrail/ImageTrail.tsx(583,11): error TS6133: 'container' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Animations/ImageTrail/ImageTrail.tsx(584,11): error TS6133: 'DOM' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Animations/ImageTrail/ImageTrail.tsx(725,11): error TS6133: 'container' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Animations/ImageTrail/ImageTrail.tsx(726,11): error TS6133: 'DOM' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Animations/ImageTrail/ImageTrail.tsx(890,11): error TS6133: 'container' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Animations/ImageTrail/ImageTrail.tsx(891,11): error TS6133: 'DOM' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Animations/LaserFlow/LaserFlow.tsx(2,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/MagicRings/MagicRings.tsx(2,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/OrbitImages/OrbitImages.tsx(5,76): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/PixelTrail/PixelTrail.tsx(3,59): error TS2307: Cannot find module '@react-three/fiber' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/PixelTrail/PixelTrail.tsx(4,49): error TS2307: Cannot find module '@react-three/drei' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/PixelTrail/PixelTrail.tsx(5,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/PixelTrail/PixelTrail.tsx(14,11): error TS6196: 'DotMaterialUniforms' is declared but never used.
+src/react-bits-temp/src/ts-default/Animations/PixelTrail/PixelTrail.tsx(101,25): error TS7006: Parameter 's' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Animations/PixelTrail/PixelTrail.tsx(102,29): error TS7006: Parameter 's' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Animations/PixelTrail/PixelTrail.tsx(125,5): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Animations/PixelTrail/PixelTrail.tsx(126,7): error TS2339: Property 'planeGeometry' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Animations/PixelTrail/PixelTrail.tsx(127,7): error TS2339: Property 'primitive' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Animations/PixelTrail/PixelTrail.tsx(133,5): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Animations/PixelTransition/PixelTransition.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/ShapeBlur/ShapeBlur.tsx(2,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/SplashCursor/SplashCursor.tsx(2,8): error TS6133: 'React' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Animations/StickerPeel/StickerPeel.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/StickerPeel/StickerPeel.tsx(3,27): error TS2307: Cannot find module 'gsap/Draggable' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Animations/TargetCursor/TargetCursor.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(1,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(2,26): error TS2307: Cannot find module 'gsap/Observer' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(26,8): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(27,33): error TS2307: Cannot find module 'three/examples/jsm/environments/RoomEnvironment.js' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(259,25): error TS7006: Parameter 'obj' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(438,10): error TS2551: Property 'onBeforeCompile' does not exist on type 'Y'. Did you mean 'onBeforeCompile2'?
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(438,28): error TS7006: Parameter 'shader' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(673,7): error TS6198: All destructured elements are unused.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(674,7): error TS6133: 'F' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(675,7): error TS6133: 'I' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(676,7): error TS6133: 'O' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(677,7): error TS6133: 'V' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(678,7): error TS6133: 'B' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(679,7): error TS6133: 'N' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(680,7): error TS6133: '_' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(681,7): error TS6133: 'j' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(682,7): error TS6133: 'H' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(683,7): error TS6133: 'T' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(698,14): error TS2339: Property 'envMapRotation' does not exist on type 'Y'.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(708,10): error TS2339: Property 'add' does not exist on type 'Z'.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(710,10): error TS2339: Property 'add' does not exist on type 'Z'.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(744,36): error TS2339: Property 'count' does not exist on type 'Z'.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(745,14): error TS2551: Property 'setColorAt' does not exist on type 'Z'. Did you mean 'setColors'?
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(745,63): error TS2339: Property 'count' does not exist on type 'Z'.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(747,67): error TS2339: Property 'count' does not exist on type 'Z'.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(751,17): error TS2339: Property 'instanceColor' does not exist on type 'Z'.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(752,12): error TS2339: Property 'instanceColor' does not exist on type 'Z'.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(758,34): error TS2339: Property 'count' does not exist on type 'Z'.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(766,12): error TS2339: Property 'setMatrixAt' does not exist on type 'Z'.
+src/react-bits-temp/src/ts-default/Backgrounds/Ballpit/Ballpit.tsx(769,10): error TS2339: Property 'instanceMatrix' does not exist on type 'Z'.
+src/react-bits-temp/src/ts-default/Backgrounds/Beams/Beams.tsx(3,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/Beams/Beams.tsx(5,34): error TS2307: Cannot find module '@react-three/fiber' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/Beams/Beams.tsx(6,35): error TS2307: Cannot find module '@react-three/drei' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/Beams/Beams.tsx(7,26): error TS2307: Cannot find module 'three/src/math/MathUtils.js' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/Beams/Beams.tsx(253,7): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Backgrounds/Beams/Beams.tsx(256,7): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Backgrounds/Beams/Beams.tsx(257,7): error TS2339: Property 'ambientLight' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Backgrounds/Beams/Beams.tsx(258,7): error TS2339: Property 'color' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Backgrounds/Beams/Beams.tsx(333,13): error TS7006: Parameter '_' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Backgrounds/Beams/Beams.tsx(333,16): error TS7006: Parameter 'delta' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Backgrounds/Beams/Beams.tsx(336,10): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Backgrounds/Beams/Beams.tsx(371,10): error TS2339: Property 'directionalLight' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Backgrounds/ColorBends/ColorBends.tsx(2,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/Dither/Dither.tsx(3,56): error TS2307: Cannot find module '@react-three/fiber' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/Dither/Dither.tsx(4,44): error TS2307: Cannot find module '@react-three/postprocessing' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/Dither/Dither.tsx(5,24): error TS2307: Cannot find module 'postprocessing' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/Dither/Dither.tsx(6,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/Dither/Dither.tsx(232,15): error TS7031: Binding element 'clock' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Backgrounds/Dither/Dither.tsx(265,7): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Backgrounds/Dither/Dither.tsx(266,9): error TS2339: Property 'planeGeometry' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Backgrounds/Dither/Dither.tsx(267,9): error TS2339: Property 'shaderMaterial' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Backgrounds/Dither/Dither.tsx(272,7): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Backgrounds/Dither/Dither.tsx(278,7): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Backgrounds/Dither/Dither.tsx(284,9): error TS2339: Property 'planeGeometry' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Backgrounds/Dither/Dither.tsx(285,9): error TS2339: Property 'meshBasicMaterial' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Backgrounds/Dither/Dither.tsx(286,7): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Backgrounds/DotGrid/DotGrid.tsx(3,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/DotGrid/DotGrid.tsx(4,31): error TS2307: Cannot find module 'gsap/InertiaPlugin' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/FloatingLines/FloatingLines.tsx(12,8): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/GridDistortion/GridDistortion.tsx(2,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/GridDistortion/GridDistortion.tsx(88,34): error TS7006: Parameter 'texture' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Backgrounds/GridMotion/GridMotion.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/GridScan/GridScan.tsx(1,26): error TS2307: Cannot find module 'face-api.js' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/GridScan/GridScan.tsx(2,96): error TS2307: Cannot find module 'postprocessing' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/GridScan/GridScan.tsx(4,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/Hyperspeed/Hyperspeed.tsx(1,93): error TS2307: Cannot find module 'postprocessing' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/Hyperspeed/Hyperspeed.tsx(3,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/Hyperspeed/Hyperspeed.tsx(537,32): error TS7006: Parameter 'shader' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Backgrounds/Hyperspeed/Hyperspeed.tsx(667,32): error TS7006: Parameter 'shader' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Backgrounds/Hyperspeed/Hyperspeed.tsx(753,29): error TS6133: 'width' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Backgrounds/Hyperspeed/Hyperspeed.tsx(803,32): error TS7006: Parameter 'shader' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Backgrounds/Hyperspeed/Hyperspeed.tsx(1192,27): error TS7006: Parameter 'object' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Backgrounds/Hyperspeed/Hyperspeed.tsx(1200,34): error TS7006: Parameter 'material' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Backgrounds/LightPillar/LightPillar.tsx(2,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/LiquidEther/LiquidEther.tsx(2,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/PixelBlast/PixelBlast.tsx(1,64): error TS2307: Cannot find module 'postprocessing' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/PixelBlast/PixelBlast.tsx(3,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/PixelBlast/PixelBlast.tsx(548,35): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Backgrounds/PixelBlast/PixelBlast.tsx(601,35): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Backgrounds/PixelSnow/PixelSnow.tsx(12,8): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/Silk/Silk.tsx(3,55): error TS2307: Cannot find module '@react-three/fiber' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/Silk/Silk.tsx(4,45): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/Silk/Silk.tsx(5,26): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Backgrounds/Silk/Silk.tsx(113,5): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Backgrounds/Silk/Silk.tsx(114,7): error TS2339: Property 'planeGeometry' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Backgrounds/Silk/Silk.tsx(115,7): error TS2339: Property 'shaderMaterial' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Backgrounds/Silk/Silk.tsx(116,5): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/AnimatedList/AnimatedList.tsx(2,35): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/BounceCards/BounceCards.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/BubbleMenu/BubbleMenu.tsx(3,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/CardNav/CardNav.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/CardNav/CardNav.tsx(4,32): error TS2307: Cannot find module 'react-icons/go' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/CardSwap/CardSwap.tsx(13,18): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/Carousel/Carousel.tsx(2,63): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/Carousel/Carousel.tsx(4,66): error TS2307: Cannot find module 'react-icons/fi' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/ChromaGrid/ChromaGrid.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/Counter/Counter.tsx(1,62): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/Counter/Counter.tsx(16,30): error TS7006: Parameter 'latest' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/DecayCard/DecayCard.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/Dock/Dock.tsx(11,8): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/Dock/Dock.tsx(58,46): error TS7006: Parameter 'val' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/Dock/Dock.tsx(106,48): error TS7006: Parameter 'latest' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/Dock/Dock.tsx(164,25): error TS7031: Binding element 'pageX' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/DomeGallery/DomeGallery.tsx(2,28): error TS2307: Cannot find module '@use-gesture/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/DomeGallery/DomeGallery.tsx(342,23): error TS7031: Binding element 'event' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/DomeGallery/DomeGallery.tsx(351,18): error TS7031: Binding element 'event' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/DomeGallery/DomeGallery.tsx(351,25): error TS7031: Binding element 'last' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/DomeGallery/DomeGallery.tsx(351,70): error TS7031: Binding element 'movement' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/ElasticSlider/ElasticSlider.tsx(2,84): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/ElasticSlider/ElasticSlider.tsx(3,22): error TS2307: Cannot find module '@chakra-ui/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/ElasticSlider/ElasticSlider.tsx(4,50): error TS2307: Cannot find module 'react-icons/ri' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/FlowingMenu/FlowingMenu.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/FluidGlass/FluidGlass.tsx(2,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/FluidGlass/FluidGlass.tsx(4,73): error TS2307: Cannot find module '@react-three/fiber' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/FluidGlass/FluidGlass.tsx(15,8): error TS2307: Cannot find module '@react-three/drei' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/FluidGlass/FluidGlass.tsx(16,24): error TS2307: Cannot find module 'maath' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/FluidGlass/FluidGlass.tsx(105,13): error TS7006: Parameter 'state' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/FluidGlass/FluidGlass.tsx(105,20): error TS7006: Parameter 'delta' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/FluidGlass/FluidGlass.tsx(137,7): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/FluidGlass/FluidGlass.tsx(138,9): error TS2339: Property 'planeGeometry' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/FluidGlass/FluidGlass.tsx(139,9): error TS2339: Property 'meshBasicMaterial' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/FluidGlass/FluidGlass.tsx(140,7): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/FluidGlass/FluidGlass.tsx(141,7): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/FluidGlass/FluidGlass.tsx(156,7): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/FluidGlass/FluidGlass.tsx(221,37): error TS7006: Parameter 'child' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/FluidGlass/FluidGlass.tsx(221,44): error TS7006: Parameter 'i' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/FluidGlass/FluidGlass.tsx(232,5): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/FluidGlass/FluidGlass.tsx(245,20): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/FluidGlass/FluidGlass.tsx(255,5): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/FluidGlass/FluidGlass.tsx(262,31): error TS7006: Parameter 's' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/FluidGlass/FluidGlass.tsx(273,5): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/FluidGlass/FluidGlass.tsx(279,5): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/Folder/Folder.tsx(67,34): error TS6133: 'e' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Components/InfiniteMenu/InfiniteMenu.tsx(2,40): error TS2307: Cannot find module 'gl-matrix' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/Lanyard/Lanyard.tsx(4,42): error TS2307: Cannot find module '@react-three/fiber' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/Lanyard/Lanyard.tsx(5,63): error TS2307: Cannot find module '@react-three/drei' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/Lanyard/Lanyard.tsx(14,8): error TS2307: Cannot find module '@react-three/rapier' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/Lanyard/Lanyard.tsx(15,52): error TS2307: Cannot find module 'meshline' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/Lanyard/Lanyard.tsx(16,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/Lanyard/Lanyard.tsx(53,23): error TS7031: Binding element 'gl' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/Lanyard/Lanyard.tsx(55,9): error TS2339: Property 'ambientLight' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/Lanyard/Lanyard.tsx(148,13): error TS7006: Parameter 'state' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/Lanyard/Lanyard.tsx(148,20): error TS7006: Parameter 'delta' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/Lanyard/Lanyard.tsx(185,7): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/Lanyard/Lanyard.tsx(203,11): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/Lanyard/Lanyard.tsx(217,13): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/Lanyard/Lanyard.tsx(218,15): error TS2339: Property 'meshPhysicalMaterial' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/Lanyard/Lanyard.tsx(226,13): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/Lanyard/Lanyard.tsx(227,13): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/Lanyard/Lanyard.tsx(228,13): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/Lanyard/Lanyard.tsx(229,11): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/Lanyard/Lanyard.tsx(231,7): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/Lanyard/Lanyard.tsx(232,7): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/Lanyard/Lanyard.tsx(233,9): error TS2339: Property 'meshLineGeometry' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/Lanyard/Lanyard.tsx(234,9): error TS2339: Property 'meshLineMaterial' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/Lanyard/Lanyard.tsx(243,7): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/MagicBento/MagicBento.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/Masonry/Masonry.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/ModelViewer/ModelViewer.tsx(2,67): error TS2307: Cannot find module '@react-three/fiber' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/ModelViewer/ModelViewer.tsx(3,96): error TS2307: Cannot find module '@react-three/drei' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/ModelViewer/ModelViewer.tsx(4,27): error TS2307: Cannot find module 'three/examples/jsm/loaders/OBJLoader' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/ModelViewer/ModelViewer.tsx(5,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/ModelViewer/ModelViewer.tsx(164,29): error TS7006: Parameter 'material' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/ModelViewer/ModelViewer.tsx(195,31): error TS7006: Parameter 'material' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/ModelViewer/ModelViewer.tsx(346,13): error TS7006: Parameter '_' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/ModelViewer/ModelViewer.tsx(346,16): error TS7006: Parameter 'dt' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/ModelViewer/ModelViewer.tsx(387,5): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/ModelViewer/ModelViewer.tsx(388,7): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/ModelViewer/ModelViewer.tsx(389,9): error TS2339: Property 'primitive' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/ModelViewer/ModelViewer.tsx(390,7): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/ModelViewer/ModelViewer.tsx(391,5): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/ModelViewer/ModelViewer.tsx(491,23): error TS7031: Binding element 'gl' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/ModelViewer/ModelViewer.tsx(491,27): error TS7031: Binding element 'scene' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/ModelViewer/ModelViewer.tsx(491,34): error TS7031: Binding element 'camera' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/ModelViewer/ModelViewer.tsx(503,9): error TS2339: Property 'ambientLight' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/ModelViewer/ModelViewer.tsx(504,9): error TS2339: Property 'directionalLight' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/ModelViewer/ModelViewer.tsx(505,9): error TS2339: Property 'directionalLight' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/ModelViewer/ModelViewer.tsx(506,9): error TS2339: Property 'directionalLight' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-default/Components/PillNav/PillNav.tsx(3,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/ReflectiveCard/ReflectiveCard.tsx(3,23): error TS6133: 'User' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Components/ReflectiveCard/ReflectiveCard.tsx(35,10): error TS6133: 'streamActive' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/Components/ScrollStack/ScrollStack.tsx(3,19): error TS2307: Cannot find module 'lenis' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/ScrollStack/ScrollStack.tsx(212,17): error TS7006: Parameter 't' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/ScrollStack/ScrollStack.tsx(240,17): error TS7006: Parameter 't' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/Components/SpotlightCard/SpotlightCard.tsx(4,11): error TS6196: 'Position' is declared but never used.
+src/react-bits-temp/src/ts-default/Components/Stack/Stack.tsx(1,68): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/StaggeredMenu/StaggeredMenu.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/Stepper/Stepper.tsx(1,51): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/TiltedCard/TiltedCard.tsx(1,36): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/Components/TiltedCard/TiltedCard.tsx(3,51): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/ASCIIText/ASCIIText.tsx(4,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/ASCIIText/ASCIIText.tsx(440,25): error TS7006: Parameter 'object' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/TextAnimations/BlurText/BlurText.tsx(1,36): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/CircularText/CircularText.tsx(2,79): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/CountUp/CountUp.tsx(1,54): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/DecryptedText/DecryptedText.tsx(2,24): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/DecryptedText/DecryptedText.tsx(3,38): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/FallingText/FallingText.tsx(2,20): error TS2307: Cannot find module 'matter-js' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/GradientText/GradientText.tsx(2,73): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/GradientText/GradientText.tsx(33,21): error TS7006: Parameter 'time' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/TextAnimations/GradientText/GradientText.tsx(68,53): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/TextAnimations/RotatingText/RotatingText.tsx(11,8): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/RotatingText/RotatingText.tsx(75,45): error TS2339: Property 'Segmenter' does not exist on type 'typeof Intl'.
+src/react-bits-temp/src/ts-default/TextAnimations/RotatingText/RotatingText.tsx(76,34): error TS2339: Property 'Segmenter' does not exist on type 'typeof Intl'.
+src/react-bits-temp/src/ts-default/TextAnimations/RotatingText/RotatingText.tsx(77,61): error TS18046: 'segment' is of type 'unknown'.
+src/react-bits-temp/src/ts-default/TextAnimations/ScrambledText/ScrambledText.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/ScrambledText/ScrambledText.tsx(3,27): error TS2307: Cannot find module 'gsap/SplitText' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/ScrambledText/ScrambledText.tsx(4,36): error TS2307: Cannot find module 'gsap/ScrambleTextPlugin' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/ScrollFloat/ScrollFloat.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/ScrollFloat/ScrollFloat.tsx(3,31): error TS2307: Cannot find module 'gsap/ScrollTrigger' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/ScrollReveal/ScrollReveal.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/ScrollReveal/ScrollReveal.tsx(3,31): error TS2307: Cannot find module 'gsap/ScrollTrigger' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/ScrollReveal/ScrollReveal.tsx(108,38): error TS7006: Parameter 'trigger' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/TextAnimations/ScrollVelocity/ScrollVelocity.tsx(10,8): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/ScrollVelocity/ScrollVelocity.tsx(117,35): error TS7006: Parameter 'v' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/TextAnimations/ScrollVelocity/ScrollVelocity.tsx(123,24): error TS6133: 't' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/TextAnimations/ScrollVelocity/ScrollVelocity.tsx(123,24): error TS7006: Parameter 't' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/TextAnimations/ScrollVelocity/ScrollVelocity.tsx(123,27): error TS7006: Parameter 'delta' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/TextAnimations/ShinyText/ShinyText.tsx(2,73): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/ShinyText/ShinyText.tsx(41,21): error TS7006: Parameter 'time' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/TextAnimations/ShinyText/ShinyText.tsx(102,53): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/TextAnimations/Shuffle/Shuffle.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/Shuffle/Shuffle.tsx(3,31): error TS2307: Cannot find module 'gsap/ScrollTrigger' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/Shuffle/Shuffle.tsx(4,44): error TS2307: Cannot find module 'gsap/SplitText' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/Shuffle/Shuffle.tsx(5,25): error TS2307: Cannot find module '@gsap/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/Shuffle/Shuffle.tsx(280,38): error TS6133: 'i' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/TextAnimations/Shuffle/Shuffle.tsx(280,38): error TS7006: Parameter 'i' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/TextAnimations/Shuffle/Shuffle.tsx(282,38): error TS6133: 'i' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/TextAnimations/Shuffle/Shuffle.tsx(282,38): error TS7006: Parameter 'i' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/TextAnimations/Shuffle/Shuffle.tsx(305,23): error TS6133: 'i' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/TextAnimations/Shuffle/Shuffle.tsx(307,23): error TS6133: 'i' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/TextAnimations/SplitText/SplitText.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/SplitText/SplitText.tsx(3,31): error TS2307: Cannot find module 'gsap/ScrollTrigger' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/SplitText/SplitText.tsx(4,44): error TS2307: Cannot find module 'gsap/SplitText' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/SplitText/SplitText.tsx(5,25): error TS2307: Cannot find module '@gsap/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/SplitText/SplitText.tsx(132,40): error TS7006: Parameter 'st' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-default/TextAnimations/TextCursor/TextCursor.tsx(2,41): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/TextType/TextType.tsx(4,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/TrueFocus/TrueFocus.tsx(1,39): error TS6133: 'RefObject' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/TextAnimations/TrueFocus/TrueFocus.tsx(2,24): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/VariableProximity/VariableProximity.tsx(1,50): error TS6133: 'MutableRefObject' is declared but its value is never read.
+src/react-bits-temp/src/ts-default/TextAnimations/VariableProximity/VariableProximity.tsx(2,24): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-default/TextAnimations/VariableProximity/VariableProximity.tsx(177,22): error TS7006: Parameter 'el' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Animations/AnimatedContent/AnimatedContent.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/AnimatedContent/AnimatedContent.tsx(3,31): error TS2307: Cannot find module 'gsap/ScrollTrigger' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/Antigravity/Antigravity.tsx(1,44): error TS2307: Cannot find module '@react-three/fiber' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/Antigravity/Antigravity.tsx(3,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/Antigravity/Antigravity.tsx(89,12): error TS7006: Parameter 'state' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Animations/Antigravity/Antigravity.tsx(178,5): error TS2339: Property 'instancedMesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Animations/Antigravity/Antigravity.tsx(179,39): error TS2339: Property 'capsuleGeometry' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Animations/Antigravity/Antigravity.tsx(180,38): error TS2339: Property 'sphereGeometry' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Animations/Antigravity/Antigravity.tsx(181,35): error TS2339: Property 'boxGeometry' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Animations/Antigravity/Antigravity.tsx(182,43): error TS2339: Property 'tetrahedronGeometry' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Animations/Antigravity/Antigravity.tsx(183,7): error TS2339: Property 'meshBasicMaterial' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Animations/Antigravity/Antigravity.tsx(184,5): error TS2339: Property 'instancedMesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Animations/BlobCursor/BlobCursor.tsx(4,18): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/Crosshair/Crosshair.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/Cubes/Cubes.tsx(2,18): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/FadeContent/FadeContent.tsx(3,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/FadeContent/FadeContent.tsx(4,31): error TS2307: Cannot find module 'gsap/ScrollTrigger' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/GhostCursor/GhostCursor.tsx(2,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/GhostCursor/GhostCursor.tsx(3,32): error TS2307: Cannot find module 'three/examples/jsm/postprocessing/EffectComposer.js' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/GhostCursor/GhostCursor.tsx(4,28): error TS2307: Cannot find module 'three/examples/jsm/postprocessing/RenderPass.js' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/GhostCursor/GhostCursor.tsx(5,28): error TS2307: Cannot find module 'three/examples/jsm/postprocessing/ShaderPass.js' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/GhostCursor/GhostCursor.tsx(6,33): error TS2307: Cannot find module 'three/examples/jsm/postprocessing/UnrealBloomPass.js' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/GradualBlur/GradualBlur.tsx(2,23): error TS2307: Cannot find module 'mathjs' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/ImageTrail/ImageTrail.tsx(1,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/ImageTrail/ImageTrail.tsx(61,11): error TS6133: 'DOM' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/Animations/ImageTrail/ImageTrail.tsx(175,11): error TS6133: 'container' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/Animations/ImageTrail/ImageTrail.tsx(176,11): error TS6133: 'DOM' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/Animations/ImageTrail/ImageTrail.tsx(302,11): error TS6133: 'container' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/Animations/ImageTrail/ImageTrail.tsx(303,11): error TS6133: 'DOM' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/Animations/ImageTrail/ImageTrail.tsx(432,11): error TS6133: 'container' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/Animations/ImageTrail/ImageTrail.tsx(433,11): error TS6133: 'DOM' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/Animations/ImageTrail/ImageTrail.tsx(582,11): error TS6133: 'container' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/Animations/ImageTrail/ImageTrail.tsx(583,11): error TS6133: 'DOM' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/Animations/ImageTrail/ImageTrail.tsx(724,11): error TS6133: 'container' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/Animations/ImageTrail/ImageTrail.tsx(725,11): error TS6133: 'DOM' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/Animations/ImageTrail/ImageTrail.tsx(889,11): error TS6133: 'container' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/Animations/ImageTrail/ImageTrail.tsx(890,11): error TS6133: 'DOM' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/Animations/LaserFlow/LaserFlow.tsx(2,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/MagicRings/MagicRings.tsx(2,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/OrbitImages/OrbitImages.tsx(5,76): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/PixelTrail/PixelTrail.tsx(1,49): error TS2307: Cannot find module '@react-three/drei' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/PixelTrail/PixelTrail.tsx(2,59): error TS2307: Cannot find module '@react-three/fiber' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/PixelTrail/PixelTrail.tsx(4,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/PixelTrail/PixelTrail.tsx(11,11): error TS6196: 'DotMaterialUniforms' is declared but never used.
+src/react-bits-temp/src/ts-tailwind/Animations/PixelTrail/PixelTrail.tsx(100,25): error TS7006: Parameter 's' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Animations/PixelTrail/PixelTrail.tsx(101,29): error TS7006: Parameter 's' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Animations/PixelTrail/PixelTrail.tsx(133,5): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Animations/PixelTrail/PixelTrail.tsx(134,7): error TS2339: Property 'planeGeometry' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Animations/PixelTrail/PixelTrail.tsx(135,7): error TS2339: Property 'primitive' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Animations/PixelTrail/PixelTrail.tsx(141,5): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Animations/PixelTransition/PixelTransition.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/ShapeBlur/ShapeBlur.tsx(2,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/SplashCursor/SplashCursor.tsx(2,8): error TS6133: 'React' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/Animations/StickerPeel/StickerPeel.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/StickerPeel/StickerPeel.tsx(3,27): error TS2307: Cannot find module 'gsap/Draggable' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Animations/TargetCursor/TargetCursor.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Ballpit/Ballpit.tsx(1,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Ballpit/Ballpit.tsx(2,26): error TS2307: Cannot find module 'gsap/Observer' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Ballpit/Ballpit.tsx(26,8): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Ballpit/Ballpit.tsx(27,33): error TS2307: Cannot find module 'three/examples/jsm/environments/RoomEnvironment.js' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Ballpit/Ballpit.tsx(259,25): error TS7006: Parameter 'obj' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Ballpit/Ballpit.tsx(438,10): error TS2551: Property 'onBeforeCompile' does not exist on type 'Y'. Did you mean 'onBeforeCompile2'?
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Ballpit/Ballpit.tsx(438,28): error TS7006: Parameter 'shader' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Ballpit/Ballpit.tsx(694,14): error TS2339: Property 'envMapRotation' does not exist on type 'Y'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Ballpit/Ballpit.tsx(704,10): error TS2339: Property 'add' does not exist on type 'Z'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Ballpit/Ballpit.tsx(706,10): error TS2339: Property 'add' does not exist on type 'Z'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Ballpit/Ballpit.tsx(740,36): error TS2339: Property 'count' does not exist on type 'Z'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Ballpit/Ballpit.tsx(741,14): error TS2551: Property 'setColorAt' does not exist on type 'Z'. Did you mean 'setColors'?
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Ballpit/Ballpit.tsx(741,63): error TS2339: Property 'count' does not exist on type 'Z'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Ballpit/Ballpit.tsx(743,67): error TS2339: Property 'count' does not exist on type 'Z'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Ballpit/Ballpit.tsx(747,17): error TS2339: Property 'instanceColor' does not exist on type 'Z'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Ballpit/Ballpit.tsx(748,12): error TS2339: Property 'instanceColor' does not exist on type 'Z'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Ballpit/Ballpit.tsx(754,34): error TS2339: Property 'count' does not exist on type 'Z'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Ballpit/Ballpit.tsx(762,12): error TS2339: Property 'setMatrixAt' does not exist on type 'Z'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Ballpit/Ballpit.tsx(765,10): error TS2339: Property 'instanceMatrix' does not exist on type 'Z'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Beams/Beams.tsx(3,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Beams/Beams.tsx(5,34): error TS2307: Cannot find module '@react-three/fiber' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Beams/Beams.tsx(6,35): error TS2307: Cannot find module '@react-three/drei' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Beams/Beams.tsx(7,26): error TS2307: Cannot find module 'three/src/math/MathUtils.js' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Beams/Beams.tsx(251,7): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Beams/Beams.tsx(254,7): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Beams/Beams.tsx(255,7): error TS2339: Property 'ambientLight' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Beams/Beams.tsx(256,7): error TS2339: Property 'color' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Beams/Beams.tsx(331,13): error TS7006: Parameter '_' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Beams/Beams.tsx(331,16): error TS7006: Parameter 'delta' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Beams/Beams.tsx(334,10): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Beams/Beams.tsx(369,10): error TS2339: Property 'directionalLight' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/ColorBends/ColorBends.tsx(2,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Dither/Dither.tsx(2,18): error TS6133: 'useState' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Dither/Dither.tsx(3,56): error TS2307: Cannot find module '@react-three/fiber' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Dither/Dither.tsx(4,44): error TS2307: Cannot find module '@react-three/postprocessing' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Dither/Dither.tsx(5,24): error TS2307: Cannot find module 'postprocessing' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Dither/Dither.tsx(6,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Dither/Dither.tsx(230,15): error TS7031: Binding element 'clock' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Dither/Dither.tsx(263,7): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Dither/Dither.tsx(264,9): error TS2339: Property 'planeGeometry' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Dither/Dither.tsx(265,9): error TS2339: Property 'shaderMaterial' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Dither/Dither.tsx(270,7): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Dither/Dither.tsx(276,7): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Dither/Dither.tsx(282,9): error TS2339: Property 'planeGeometry' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Dither/Dither.tsx(283,9): error TS2339: Property 'meshBasicMaterial' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Dither/Dither.tsx(284,7): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/DotGrid/DotGrid.tsx(3,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/DotGrid/DotGrid.tsx(4,31): error TS2307: Cannot find module 'gsap/InertiaPlugin' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/FloatingLines/FloatingLines.tsx(12,8): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/GridDistortion/GridDistortion.tsx(2,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/GridDistortion/GridDistortion.tsx(87,34): error TS7006: Parameter 'texture' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/GridMotion/GridMotion.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/GridScan/GridScan.tsx(1,26): error TS2307: Cannot find module 'face-api.js' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/GridScan/GridScan.tsx(2,96): error TS2307: Cannot find module 'postprocessing' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/GridScan/GridScan.tsx(4,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Hyperspeed/Hyperspeed.tsx(1,93): error TS2307: Cannot find module 'postprocessing' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Hyperspeed/Hyperspeed.tsx(3,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Hyperspeed/Hyperspeed.tsx(535,32): error TS7006: Parameter 'shader' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Hyperspeed/Hyperspeed.tsx(665,32): error TS7006: Parameter 'shader' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Hyperspeed/Hyperspeed.tsx(751,29): error TS6133: 'width' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Hyperspeed/Hyperspeed.tsx(801,32): error TS7006: Parameter 'shader' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Hyperspeed/Hyperspeed.tsx(1190,27): error TS7006: Parameter 'object' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Hyperspeed/Hyperspeed.tsx(1198,34): error TS7006: Parameter 'material' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/LightPillar/LightPillar.tsx(2,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/LiquidEther/LiquidEther.tsx(2,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/PixelBlast/PixelBlast.tsx(1,64): error TS2307: Cannot find module 'postprocessing' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/PixelBlast/PixelBlast.tsx(3,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/PixelBlast/PixelBlast.tsx(545,35): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/PixelBlast/PixelBlast.tsx(598,35): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/PixelSnow/PixelSnow.tsx(12,8): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Silk/Silk.tsx(3,55): error TS2307: Cannot find module '@react-three/fiber' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Silk/Silk.tsx(4,45): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Silk/Silk.tsx(5,26): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Silk/Silk.tsx(113,5): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Silk/Silk.tsx(114,7): error TS2339: Property 'planeGeometry' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Silk/Silk.tsx(115,7): error TS2339: Property 'shaderMaterial' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Backgrounds/Silk/Silk.tsx(116,5): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/AnimatedList/AnimatedList.tsx(2,35): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/BounceCards/BounceCards.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/BubbleMenu/BubbleMenu.tsx(3,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/CardNav/CardNav.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/CardNav/CardNav.tsx(4,32): error TS2307: Cannot find module 'react-icons/go' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/CardSwap/CardSwap.tsx(13,18): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/Carousel/Carousel.tsx(2,63): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/Carousel/Carousel.tsx(6,66): error TS2307: Cannot find module 'react-icons/fi' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/ChromaGrid/ChromaGrid.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/Counter/Counter.tsx(1,62): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/Counter/Counter.tsx(14,30): error TS7006: Parameter 'latest' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/DecayCard/DecayCard.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/Dock/Dock.tsx(11,8): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/Dock/Dock.tsx(56,46): error TS7006: Parameter 'val' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/Dock/Dock.tsx(104,48): error TS7006: Parameter 'latest' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/Dock/Dock.tsx(159,25): error TS7031: Binding element 'pageX' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/DomeGallery/DomeGallery.tsx(2,28): error TS2307: Cannot find module '@use-gesture/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/DomeGallery/DomeGallery.tsx(341,23): error TS7031: Binding element 'event' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/DomeGallery/DomeGallery.tsx(357,18): error TS7031: Binding element 'event' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/DomeGallery/DomeGallery.tsx(357,25): error TS7031: Binding element 'last' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/DomeGallery/DomeGallery.tsx(357,86): error TS7031: Binding element 'movement' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/ElasticSlider/ElasticSlider.tsx(2,84): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/FlowingMenu/FlowingMenu.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/FluidGlass/FluidGlass.tsx(2,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/FluidGlass/FluidGlass.tsx(4,73): error TS2307: Cannot find module '@react-three/fiber' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/FluidGlass/FluidGlass.tsx(15,8): error TS2307: Cannot find module '@react-three/drei' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/FluidGlass/FluidGlass.tsx(16,24): error TS2307: Cannot find module 'maath' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/FluidGlass/FluidGlass.tsx(105,13): error TS7006: Parameter 'state' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/FluidGlass/FluidGlass.tsx(105,20): error TS7006: Parameter 'delta' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/FluidGlass/FluidGlass.tsx(137,7): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/FluidGlass/FluidGlass.tsx(138,9): error TS2339: Property 'planeGeometry' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/FluidGlass/FluidGlass.tsx(139,9): error TS2339: Property 'meshBasicMaterial' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/FluidGlass/FluidGlass.tsx(140,7): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/FluidGlass/FluidGlass.tsx(141,7): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/FluidGlass/FluidGlass.tsx(156,7): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/FluidGlass/FluidGlass.tsx(221,37): error TS7006: Parameter 'child' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/FluidGlass/FluidGlass.tsx(221,44): error TS7006: Parameter 'i' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/FluidGlass/FluidGlass.tsx(232,5): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/FluidGlass/FluidGlass.tsx(245,20): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/FluidGlass/FluidGlass.tsx(255,5): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/FluidGlass/FluidGlass.tsx(262,31): error TS7006: Parameter 's' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/FluidGlass/FluidGlass.tsx(273,5): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/FluidGlass/FluidGlass.tsx(279,5): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/Folder/Folder.tsx(66,34): error TS6133: 'e' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/Components/InfiniteMenu/InfiniteMenu.tsx(2,40): error TS2307: Cannot find module 'gl-matrix' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/Lanyard/Lanyard.tsx(4,42): error TS2307: Cannot find module '@react-three/fiber' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/Lanyard/Lanyard.tsx(5,63): error TS2307: Cannot find module '@react-three/drei' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/Lanyard/Lanyard.tsx(14,8): error TS2307: Cannot find module '@react-three/rapier' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/Lanyard/Lanyard.tsx(15,52): error TS2307: Cannot find module 'meshline' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/Lanyard/Lanyard.tsx(16,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/Lanyard/Lanyard.tsx(51,23): error TS7031: Binding element 'gl' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/Lanyard/Lanyard.tsx(53,9): error TS2339: Property 'ambientLight' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/Lanyard/Lanyard.tsx(146,13): error TS7006: Parameter 'state' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/Lanyard/Lanyard.tsx(146,20): error TS7006: Parameter 'delta' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/Lanyard/Lanyard.tsx(183,7): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/Lanyard/Lanyard.tsx(201,11): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/Lanyard/Lanyard.tsx(215,13): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/Lanyard/Lanyard.tsx(216,15): error TS2339: Property 'meshPhysicalMaterial' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/Lanyard/Lanyard.tsx(224,13): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/Lanyard/Lanyard.tsx(225,13): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/Lanyard/Lanyard.tsx(226,13): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/Lanyard/Lanyard.tsx(227,11): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/Lanyard/Lanyard.tsx(229,7): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/Lanyard/Lanyard.tsx(230,7): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/Lanyard/Lanyard.tsx(231,9): error TS2339: Property 'meshLineGeometry' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/Lanyard/Lanyard.tsx(232,9): error TS2339: Property 'meshLineMaterial' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/Lanyard/Lanyard.tsx(241,7): error TS2339: Property 'mesh' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/MagicBento/MagicBento.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/Masonry/Masonry.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/ModelViewer/ModelViewer.tsx(2,67): error TS2307: Cannot find module '@react-three/fiber' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/ModelViewer/ModelViewer.tsx(3,96): error TS2307: Cannot find module '@react-three/drei' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/ModelViewer/ModelViewer.tsx(4,27): error TS2307: Cannot find module 'three/examples/jsm/loaders/OBJLoader' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/ModelViewer/ModelViewer.tsx(5,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/ModelViewer/ModelViewer.tsx(330,13): error TS7006: Parameter '_' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/ModelViewer/ModelViewer.tsx(330,16): error TS7006: Parameter 'dt' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/ModelViewer/ModelViewer.tsx(371,5): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/ModelViewer/ModelViewer.tsx(372,7): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/ModelViewer/ModelViewer.tsx(373,9): error TS2339: Property 'primitive' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/ModelViewer/ModelViewer.tsx(374,7): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/ModelViewer/ModelViewer.tsx(375,5): error TS2339: Property 'group' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/ModelViewer/ModelViewer.tsx(466,23): error TS7031: Binding element 'gl' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/ModelViewer/ModelViewer.tsx(466,27): error TS7031: Binding element 'scene' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/ModelViewer/ModelViewer.tsx(466,34): error TS7031: Binding element 'camera' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/ModelViewer/ModelViewer.tsx(478,9): error TS2339: Property 'ambientLight' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/ModelViewer/ModelViewer.tsx(479,9): error TS2339: Property 'directionalLight' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/ModelViewer/ModelViewer.tsx(480,9): error TS2339: Property 'directionalLight' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/ModelViewer/ModelViewer.tsx(481,9): error TS2339: Property 'directionalLight' does not exist on type 'JSX.IntrinsicElements'.
+src/react-bits-temp/src/ts-tailwind/Components/PillNav/PillNav.tsx(3,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/ProfileCard/ProfileCard.tsx(1,58): error TS6133: 'useState' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/Components/ReflectiveCard/ReflectiveCard.tsx(2,23): error TS6133: 'User' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/Components/ReflectiveCard/ReflectiveCard.tsx(34,10): error TS6133: 'streamActive' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/Components/ScrollStack/ScrollStack.tsx(3,19): error TS2307: Cannot find module 'lenis' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/ScrollStack/ScrollStack.tsx(108,41): error TS6133: 'scrollContainer' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/Components/ScrollStack/ScrollStack.tsx(219,17): error TS7006: Parameter 't' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/ScrollStack/ScrollStack.tsx(247,17): error TS7006: Parameter 't' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/Components/Stack/Stack.tsx(1,68): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/StaggeredMenu/StaggeredMenu.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/Stepper/Stepper.tsx(2,51): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/TiltedCard/TiltedCard.tsx(1,36): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/Components/TiltedCard/TiltedCard.tsx(3,51): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/ASCIIText/ASCIIText.tsx(4,24): error TS2307: Cannot find module 'three' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/ASCIIText/ASCIIText.tsx(445,25): error TS7006: Parameter 'object' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/BlurText/BlurText.tsx(1,44): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/CircularText/CircularText.tsx(2,79): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/CountUp/CountUp.tsx(1,54): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/DecryptedText/DecryptedText.tsx(2,24): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/DecryptedText/DecryptedText.tsx(3,38): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/FallingText/FallingText.tsx(2,20): error TS2307: Cannot find module 'matter-js' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/GradientText/GradientText.tsx(2,73): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/GradientText/GradientText.tsx(32,21): error TS7006: Parameter 'time' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/GradientText/GradientText.tsx(67,53): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/RotatingText/RotatingText.tsx(9,8): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/RotatingText/RotatingText.tsx(73,47): error TS2339: Property 'Segmenter' does not exist on type 'typeof Intl'.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/RotatingText/RotatingText.tsx(74,36): error TS2339: Property 'Segmenter' does not exist on type 'typeof Intl'.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/RotatingText/RotatingText.tsx(75,63): error TS18046: 'segment' is of type 'unknown'.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/ScrambledText/ScrambledText.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/ScrambledText/ScrambledText.tsx(3,27): error TS2307: Cannot find module 'gsap/SplitText' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/ScrambledText/ScrambledText.tsx(4,36): error TS2307: Cannot find module 'gsap/ScrambleTextPlugin' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/ScrambledText/ScrambledText.tsx(37,25): error TS7006: Parameter 'el' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/ScrambledText/ScrambledText.tsx(43,27): error TS7006: Parameter 'el' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/ScrollFloat/ScrollFloat.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/ScrollFloat/ScrollFloat.tsx(3,31): error TS2307: Cannot find module 'gsap/ScrollTrigger' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/ScrollReveal/ScrollReveal.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/ScrollReveal/ScrollReveal.tsx(3,31): error TS2307: Cannot find module 'gsap/ScrollTrigger' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/ScrollReveal/ScrollReveal.tsx(107,38): error TS7006: Parameter 'trigger' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/ScrollVelocity/ScrollVelocity.tsx(10,8): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/ScrollVelocity/ScrollVelocity.tsx(116,35): error TS7006: Parameter 'v' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/ScrollVelocity/ScrollVelocity.tsx(122,24): error TS6133: 't' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/ScrollVelocity/ScrollVelocity.tsx(122,24): error TS7006: Parameter 't' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/ScrollVelocity/ScrollVelocity.tsx(122,27): error TS7006: Parameter 'delta' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/ShinyText/ShinyText.tsx(2,73): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/ShinyText/ShinyText.tsx(40,21): error TS7006: Parameter 'time' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/ShinyText/ShinyText.tsx(101,53): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/Shuffle/Shuffle.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/Shuffle/Shuffle.tsx(3,31): error TS2307: Cannot find module 'gsap/ScrollTrigger' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/Shuffle/Shuffle.tsx(4,44): error TS2307: Cannot find module 'gsap/SplitText' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/Shuffle/Shuffle.tsx(5,25): error TS2307: Cannot find module '@gsap/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/Shuffle/Shuffle.tsx(273,38): error TS6133: 'i' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/Shuffle/Shuffle.tsx(273,38): error TS7006: Parameter 'i' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/Shuffle/Shuffle.tsx(275,38): error TS6133: 'i' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/Shuffle/Shuffle.tsx(275,38): error TS7006: Parameter 'i' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/Shuffle/Shuffle.tsx(298,23): error TS6133: 'i' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/Shuffle/Shuffle.tsx(300,23): error TS6133: 'i' is declared but its value is never read.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/SplitText/SplitText.tsx(2,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/SplitText/SplitText.tsx(3,31): error TS2307: Cannot find module 'gsap/ScrollTrigger' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/SplitText/SplitText.tsx(4,44): error TS2307: Cannot find module 'gsap/SplitText' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/SplitText/SplitText.tsx(5,25): error TS2307: Cannot find module '@gsap/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/SplitText/SplitText.tsx(132,40): error TS7006: Parameter 'st' implicitly has an 'any' type.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/TextCursor/TextCursor.tsx(2,41): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/TextType/TextType.tsx(4,22): error TS2307: Cannot find module 'gsap' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/TrueFocus/TrueFocus.tsx(2,24): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/VariableProximity/VariableProximity.tsx(2,24): error TS2307: Cannot find module 'motion/react' or its corresponding type declarations.
+src/react-bits-temp/src/ts-tailwind/TextAnimations/VariableProximity/VariableProximity.tsx(178,22): error TS7006: Parameter 'el' implicitly has an 'any' type.
