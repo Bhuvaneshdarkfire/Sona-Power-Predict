@@ -152,6 +152,7 @@ const Resources: React.FC = () => {
                     </div>
                 </section>
 
+<<<<<<< HEAD
                 {/* Local Testing with Docker */}
                 <section>
                     <h2 className="section-heading text-2xl mb-5">🐳 Test Your Model Locally</h2>
@@ -238,6 +239,8 @@ docker run --rm \\
                     </div>
                 </section>
 
+=======
+>>>>>>> fbd3d0173fcc6c9e4862a4132523f8738ae4e0a3
                 {/* Code Examples */}
                 <section>
                     <h2 className="section-heading text-2xl mb-5">Example Submission</h2>
