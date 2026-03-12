@@ -78,6 +78,8 @@ const Resources: React.FC = () => {
                                 <>The leaderboard ranks teams by <strong>lowest cumulative error</strong> across all evaluated matches.</>,
                                 <><strong>No network access</strong> inside the container. All logic must be self-contained.</>,
                                 <>Maximum <strong>zip file size: 5 MB</strong>. Only Python 3.12 is supported.</>,
+                                <>Multiple models with the <strong>same scheme</strong> or a <strong>duplicated model</strong> are disqualified.</>,
+                                <>Tie break is done on the basis of <strong>performance</strong>, <strong>features</strong>, and <strong>execution time</strong>.</>,
                             ].map((rule, i) => (
                                 <li key={i} className="flex gap-3 text-sm text-gray-600 leading-relaxed">
                                     <span className="w-6 h-6 rounded-full bg-sky text-royal flex items-center justify-center flex-shrink-0 text-xs font-heading font-bold mt-0.5">
@@ -112,7 +114,7 @@ const Resources: React.FC = () => {
                             <li className="flex gap-2"><span className="text-royal font-bold">•</span> Columns: matchId, inning, over, ball, batting_team, bowling_team, batsman, bowler, batsman_runs, extras, dismissal_kind, date</li>
                         </ul>
                         <div className="flex flex-wrap gap-3">
-                            <a href="https://www.kaggle.com/datasets" target="_blank" rel="noopener noreferrer" className="btn-primary text-sm !py-2.5 !px-5">
+                            <a href="https://www.kaggle.com/datasets/dgsports/ipl-ball-by-ball-2008-to-2022" target="_blank" rel="noopener noreferrer" className="btn-primary text-sm !py-2.5 !px-5">
                                 📊 Training Data on Kaggle
                             </a>
                             <a href="/sample-model.zip" download className="btn-outline text-sm !py-2.5 !px-5">
@@ -147,6 +149,92 @@ const Resources: React.FC = () => {
                                 </li>
                             ))}
                         </ol>
+                    </div>
+                </section>
+
+                {/* Local Testing with Docker */}
+                <section>
+                    <h2 className="section-heading text-2xl mb-5">🐳 Test Your Model Locally</h2>
+                    <div className="card p-6">
+                        <p className="text-gray-600 text-sm mb-5 leading-relaxed">
+                            Before submitting, you can test your model locally using Docker — the same environment used for official evaluation.
+                        </p>
+
+                        <ol className="space-y-5">
+                            {/* Step 1 */}
+                            <li>
+                                <div className="flex gap-3">
+                                    <span className="w-7 h-7 rounded-full bg-sky text-royal flex items-center justify-center flex-shrink-0 text-xs font-heading font-bold mt-0.5">1</span>
+                                    <div className="flex-1">
+                                        <p className="font-heading font-semibold text-slate text-sm mb-2">Install Docker</p>
+                                        <p className="text-gray-500 text-sm mb-2">
+                                            Download and install <a href="https://www.docker.com/products/docker-desktop" target="_blank" rel="noopener noreferrer" className="text-royal underline">Docker Desktop</a> for your OS.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            {/* Step 2 */}
+                            <li>
+                                <div className="flex gap-3">
+                                    <span className="w-7 h-7 rounded-full bg-sky text-royal flex items-center justify-center flex-shrink-0 text-xs font-heading font-bold mt-0.5">2</span>
+                                    <div className="flex-1">
+                                        <p className="font-heading font-semibold text-slate text-sm mb-2">Prepare Your Files</p>
+                                        <p className="text-gray-500 text-sm mb-2">
+                                            Create a folder with your <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono text-royal">mymodelfile.py</code> and
+                                            the sample <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono text-royal">test_file.csv</code> (included in the sample model download).
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            {/* Step 3 */}
+                            <li>
+                                <div className="flex gap-3">
+                                    <span className="w-7 h-7 rounded-full bg-sky text-royal flex items-center justify-center flex-shrink-0 text-xs font-heading font-bold mt-0.5">3</span>
+                                    <div className="flex-1">
+                                        <p className="font-heading font-semibold text-slate text-sm mb-2">Pull & Run the Evaluation Container</p>
+                                        <p className="text-gray-500 text-sm mb-2">
+                                            Open a terminal in your project folder and run:
+                                        </p>
+                                        <pre className="card-static p-4 text-xs font-mono text-gray-700 overflow-x-auto bg-gray-50/50 mb-2">
+                                            {`# Run the evaluation container (replace paths as needed)
+docker run --rm \\
+  -v "$(pwd)/mymodelfile.py:/var/mymodelfile.py" \\
+  -v "$(pwd)/test_file.csv:/var/test_file.csv" \\
+  -v "$(pwd)/submission.csv:/var/submission.csv" \\
+  -v "$(pwd)/logs.txt:/var/logs.txt" \\
+  --memory=512m \\
+  --network none \\
+  gameathon-base`}
+                                        </pre>
+                                        <p className="text-gray-400 text-xs">
+                                            <strong>Windows users:</strong> Replace <code className="bg-gray-100 px-1 py-0.5 rounded font-mono">$(pwd)</code> with the full path to your folder, e.g. <code className="bg-gray-100 px-1 py-0.5 rounded font-mono">C:/Users/you/model</code>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            {/* Step 4 */}
+                            <li>
+                                <div className="flex gap-3">
+                                    <span className="w-7 h-7 rounded-full bg-sky text-royal flex items-center justify-center flex-shrink-0 text-xs font-heading font-bold mt-0.5">4</span>
+                                    <div className="flex-1">
+                                        <p className="font-heading font-semibold text-slate text-sm mb-2">Check Your Results</p>
+                                        <p className="text-gray-500 text-sm">
+                                            After the container finishes, check <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono text-royal">submission.csv</code> for your predictions and <code className="bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono text-royal">logs.txt</code> for any errors or success messages.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+
+                        <div className="mt-5 p-4 bg-amber-50 border border-amber-200 rounded-xl">
+                            <p className="text-amber-800 text-xs leading-relaxed">
+                                <strong>⚠️ Note:</strong> The Docker image includes pre-installed packages: <code className="bg-amber-100 px-1 py-0.5 rounded font-mono">pandas, numpy, scikit-learn, scipy, xgboost, lightgbm, statsmodels, matplotlib, seaborn</code>.
+                                Your model has <strong>20 seconds</strong> max execution time, <strong>512 MB RAM</strong>, and <strong>no network access</strong> inside the container.
+                            </p>
+                        </div>
                     </div>
                 </section>
 

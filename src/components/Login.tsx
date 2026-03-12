@@ -19,6 +19,7 @@ const Login = () => {
       const team: any = await getTeamByEmail(email);
       const role = team?.role ?? 'user';
       if (role === 'admin') navigate('/admin');
+      else if (!team?.setupComplete) navigate('/team-setup');
       else navigate('/user-dashboard');
     } catch (err: any) {
       setError(err.message || 'Invalid credentials or pending approval.');

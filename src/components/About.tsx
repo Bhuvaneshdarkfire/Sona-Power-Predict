@@ -14,18 +14,8 @@ const About: React.FC = () => {
             </section>
 
             <div className="max-w-container mx-auto px-4 lg:px-8 py-14">
-                {/* Department Info */}
+                {/* About Sona Power Predict */}
                 <div className="mb-12">
-                    <div className="card-static bg-sky/30 p-6 mb-8">
-                        <p className="font-heading font-bold text-slate text-lg mb-1">Department of Computer Science and Engineering</p>
-                        <p className="text-gray-600 text-sm">
-                            B.E. CSE, B.E. CSE(AIML), B.E. CSD, B.TECH.CBE & B.E. CSE(SCE)
-                        </p>
-                        <p className="text-gray-500 text-sm mt-2 italic">
-                            Sona College of Technology — Learning is a Celebration!
-                        </p>
-                    </div>
-
                     <h2 className="section-heading text-2xl mb-4">About Sona Power Predict</h2>
                     <p className="text-gray-600 mb-5 max-w-3xl leading-relaxed">
                         Sona Power Predict is a national-level hackathon where cricket meets code. Teams build ML models to predict IPL PowerPlay scores.
@@ -109,6 +99,7 @@ const About: React.FC = () => {
                         ))}
                     </div>
                 </div>
+
                 {/* Hackathon Leads */}
                 <div className="mb-12">
                     <h2 className="section-heading text-2xl mb-6">🎯 Hackathon Leads</h2>
@@ -177,13 +168,29 @@ const About: React.FC = () => {
 
                 {/* Sponsor */}
                 <div className="mb-12">
-                    <h2 className="section-heading text-2xl mb-6">Sponsor</h2>
-                    <div className="card p-6 text-center">
+                    <h2 className="section-heading text-2xl mb-6 text-center">Sponsor</h2>
+                    <div className="card p-10 text-center max-w-md mx-auto">
                         <a href="https://zentropytech.com" target="_blank" rel="noopener noreferrer" className="inline-block hover:opacity-80 transition">
-                            <img src="/zentropy-logo.png" alt="Zentropy Technologies" className="h-16 mx-auto object-contain mb-3" />
+                            <img src="/zentropy-logo.png" alt="Zentropy Technologies" className="h-40 mx-auto object-contain mb-4" />
                         </a>
                         <p className="text-gray-500 text-sm">Zentropy Technologies — Data Science & Engineering Solutions</p>
                     </div>
+                </div>
+
+                {/* About Sona College of Technology */}
+                <div className="mb-12">
+                    <h2 className="section-heading text-2xl mb-4">About Sona College of Technology</h2>
+                    <p className="text-gray-600 mb-5 leading-relaxed text-justify">
+                        Sona College of Technology has achieved global identity through its involvement in research in recent technology and successful completion of projects and products. The college is known for its rich tradition and high values bestowed upon by its Founder Chairman, <strong>Thiru. M.S. Chockalingam</strong>. The college is awarded with <strong>"AICTE-CII Award for Best Industry-Linked Technical Institute in India consecutively for 6 years from 2014 to 2019"</strong> and acclaimed <strong>'A++' grade by 'NAAC'</strong> that stand testimony to the commitment of the college to impart quality education. Sona is a proud recipient of <strong>"Entrepreneur Award"</strong> from MHRD, New Delhi, for Emerging Global Destination for education. With <strong>36 advanced research centres</strong>, Sona College undertakes cutting-edge multidisciplinary research and has contributed to high-profile national missions such as <strong>Chandrayaan-3, Gaganyaan, and the Bahubali mission</strong>, underscoring its strong national impact and global outlook. Sona College of Technology is equipped with world class infrastructure, highly qualified and experienced faculty members, and an active Placement Training and Welfare Cell.
+                    </p>
+                </div>
+
+                {/* About the CSE Department */}
+                <div className="mb-12">
+                    <h2 className="section-heading text-2xl mb-4">About the CSE Department</h2>
+                    <p className="text-gray-600 mb-5 leading-relaxed text-justify">
+                        The Department of Computer Science and Engineering (CSE) at Sona College of Technology is committed to excellence in education, research, and innovation. Accredited by the <strong>National Board of Accreditation (NBA) for six years</strong>, the department offers <strong>five undergraduate programs and one postgraduate program</strong>, providing students with a strong foundation in core computing concepts and emerging technologies. Supported by experienced faculty, modern laboratories, and active industry and research engagement, the department fosters skill development, academic excellence, and global competitiveness, while encouraging innovation and practical learning.
+                    </p>
                 </div>
 
                 {/* Vision Quote */}

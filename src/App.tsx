@@ -13,6 +13,7 @@ import RegistrationForm from './components/RegistrationForm';
 import UserDashboard from './components/UserDashboard';
 import AdminDashboard from './components/AdminDashboard';
 import AdminSetup from './components/AdminSetup';
+import TeamSetup from './components/TeamSetup';
 import About from './components/About';
 import FAQ from './components/FAQ';
 import Resources from './components/Resources';
@@ -75,7 +76,7 @@ const Footer = () => (
         <div>
           <h4 className="font-heading font-semibold text-white text-sm mb-3">Resources</h4>
           <ul className="space-y-2 text-sm">
-            <li><a href="https://www.kaggle.com/datasets" target="_blank" rel="noopener noreferrer">Training Data</a></li>
+            <li><a href="https://www.kaggle.com/datasets/dgsports/ipl-ball-by-ball-2008-to-2022" target="_blank" rel="noopener noreferrer">Training Data</a></li>
             <li><a href="/sample-model.zip" download>Sample Model</a></li>
             <li><Link to="/register">Register</Link></li>
           </ul>
@@ -87,7 +88,7 @@ const Footer = () => (
           <ul className="space-y-2 text-sm">
             <li>Sona College of Technology</li>
             <li>Salem, Tamil Nadu</li>
-            <li><a href="mailto:csd@sonatech.ac.in">csd@sonatech.ac.in</a></li>
+            <li><a href="mailto:sonapowerpredict@gmail.com">sonapowerpredict@gmail.com</a></li>
           </ul>
         </div>
       </div>
@@ -141,6 +142,14 @@ function App() {
               <Route path="/resources" element={<Resources />} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<RegistrationForm onRegister={() => { }} />} />
+              <Route
+                path="/team-setup"
+                element={
+                  <ProtectedRoute requiredRole="user">
+                    <TeamSetup />
+                  </ProtectedRoute>
+                }
+              />
               <Route
                 path="/user-dashboard"
                 element={

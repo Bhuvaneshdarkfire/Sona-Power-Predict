@@ -31,15 +31,12 @@ async function apiFetch(endpoint: string, options: RequestInit = {}) {
             },
         });
     } catch (err: any) {
-        throw new Error('Cannot connect to the server. Please ensure the backend is running.');
+        throw new Error('Server under migration');
     }
 
     const contentType = res.headers.get('content-type') || '';
     if (!contentType.includes('application/json')) {
-        throw new Error(
-            `Server returned an unexpected response (${res.status}). ` +
-            'Please ensure the backend server is running on port 5000.'
-        );
+        throw new Error('Server under migration');
     }
 
     const data = await res.json();
@@ -55,15 +52,12 @@ async function publicFetch(endpoint: string) {
     try {
         res = await fetch(`${API_BASE}${endpoint}`);
     } catch {
-        throw new Error('Cannot connect to the server. Please ensure the backend is running.');
+        throw new Error('Server under migration');
     }
 
     const contentType = res.headers.get('content-type') || '';
     if (!contentType.includes('application/json')) {
-        throw new Error(
-            `Server returned an unexpected response (${res.status}). ` +
-            'Please ensure the backend server is running on port 5000.'
-        );
+        throw new Error('Server under migration');
     }
 
     const data = await res.json();

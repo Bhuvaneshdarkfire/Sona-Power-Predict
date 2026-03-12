@@ -14,6 +14,7 @@ import {
 } from "firebase/firestore";
 import { createUserWithEmailAndPassword, signOut } from "firebase/auth";
 import { db, auth } from "../firebase";
+import type { TeamSetupData } from "../types";
 
 // ─── Collections ──────────────────────────────────────────────
 const teamsCol = () => collection(db, "teams");
@@ -77,6 +78,7 @@ export async function registerTeam(data: {
         status: "Pending",
         editCount: 0,
         maxEdits: 2,
+        setupComplete: false,
         uid,
         createdAt: Timestamp.now(),
     });
@@ -159,6 +161,27 @@ export async function updateMembers(teamId: string, members: string[]) {
     });
 
     return { success: true, editsLeft: (data.maxEdits ?? 2) - (data.editCount ?? 0) - 1 };
+}
+
+// ─── TEAM SETUP (Post-Login Onboarding) ──────────────────────
+export async function saveTeamSetup(teamId: string, setupData: TeamSetupData) {
+    const ref = doc(db, "teams", teamId);
+    const snap = await getDoc(ref);
+    if (!snap.exists()) throw new Error("Team not found");
+
+    // Build a flat members array from the detailed member info (for backward compat)
+    const memberNames = setupData.memberDetails.map(m => m.name).filter(Boolean);
+
+    await updateDoc(ref, {
+        leaderDetails: setupData.leaderDetails,
+        memberDetails: setupData.memberDetails,
+        workshopPreference: setupData.workshopPreference,
+        members: [setupData.leaderDetails.name, ...memberNames, ...Array(Math.max(0, 5 - memberNames.length)).fill("")],
+        institute: setupData.leaderDetails.collegeName,
+        setupComplete: true,
+    });
+
+    return { success: true };
 }
 
 // ─── 7. ADMIN DATA ───────────────────────────────────────────

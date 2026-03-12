@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getPublicData } from '../services/firestore';
 import { listMatches } from '../services/api';
+import { useAuth } from '../App';
 
 /* ─── Cricket Pitch SVG (geometric minimal) ─── */
 const CricketPitchSVG = () => (
@@ -48,6 +49,7 @@ const RankBadge: React.FC<{ rank: number }> = ({ rank }) => {
 };
 
 const Home: React.FC = () => {
+  const { user, role } = useAuth();
   const [leaderboard, setLeaderboard] = useState<any[]>([]);
   const [recentMatches, setRecentMatches] = useState<any[]>([]);
 
@@ -77,10 +79,23 @@ const Home: React.FC = () => {
               <p className="text-gray-600 text-lg mb-8 leading-relaxed max-w-lg">
                 Submit your Python prediction model. Compete against teams across the country. Climb the live evaluation leaderboard.
               </p>
+              {/* Sponsor Badge */}
+              <div className="flex items-center gap-3 mb-5">
+                <span className="text-gray-400 text-sm font-medium uppercase tracking-wider">Sponsored by</span>
+                <a href="https://zentropytech.com" target="_blank" rel="noopener noreferrer" className="ml-1">
+                  <img src="/zentropy-logo.png" alt="Zentropy Technologies" style={{ height: '160px', minWidth: '200px' }} className="object-contain" />
+                </a>
+              </div>
               <div className="flex flex-wrap gap-4">
-                <Link to="/register" className="btn-primary">
-                  Register Now
-                </Link>
+                {user ? (
+                  <Link to={role === 'admin' ? '/admin' : '/user-dashboard'} className="btn-primary">
+                    Dashboard
+                  </Link>
+                ) : (
+                  <Link to="/register" className="btn-primary">
+                    Register Now
+                  </Link>
+                )}
                 <Link to="/resources" className="btn-outline">
                   View Rules
                 </Link>
@@ -230,7 +245,7 @@ const Home: React.FC = () => {
         <div className="max-w-container mx-auto px-4 lg:px-8">
           <h2 className="section-heading text-2xl text-center mb-10">Quick Links</h2>
           <div className="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
-            <a href="https://www.kaggle.com/datasets" target="_blank" rel="noopener noreferrer" className="card p-5 text-center group">
+            <a href="https://www.kaggle.com/datasets/dgsports/ipl-ball-by-ball-2008-to-2022" target="_blank" rel="noopener noreferrer" className="card p-5 text-center group">
               <div className="w-10 h-10 mx-auto mb-3 rounded-lg bg-sky flex items-center justify-center text-xl">📊</div>
               <span className="font-heading font-semibold text-slate text-sm group-hover:text-royal transition-colors">Training Data</span>
             </a>
@@ -247,15 +262,14 @@ const Home: React.FC = () => {
       </section>
 
       {/* ═══ SPONSOR STRIP ═══ */}
-      <section className="py-12 bg-gray-50/50 border-t border-light-border">
+      <section className="py-6 bg-gray-50/50 border-t border-light-border">
         <div className="max-w-container mx-auto px-4 lg:px-8 text-center">
-          <p className="text-gray-400 text-xs font-heading font-medium uppercase tracking-wider mb-6">Sponsored By</p>
+          <p className="text-gray-400 text-xs font-heading font-medium uppercase tracking-wider mb-3">Sponsored By</p>
           <div className="flex justify-center items-center gap-8 flex-wrap">
             <a href="https://zentropytech.com" target="_blank" rel="noopener noreferrer" className="group transition-transform hover:scale-105">
-              <img src="/zentropy-logo.png" alt="Zentropy Technologies" className="h-14 object-contain" />
+              <img src="/zentropy-logo.png" alt="Zentropy Technologies" className="h-24 object-contain" />
             </a>
           </div>
-          <p className="text-gray-400 text-xs mt-4">Zentropy Technologies — Data Science & Engineering Solutions</p>
         </div>
       </section>
     </div>

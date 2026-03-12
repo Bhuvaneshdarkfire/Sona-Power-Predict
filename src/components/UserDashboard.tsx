@@ -77,6 +77,8 @@ const UserDashboard = () => {
     if (!user) return;
     try {
       const d = await getUserDashboard(user.uid);
+      // Redirect if team setup not completed
+      if (!d.team.setupComplete) { navigate('/team-setup'); return; }
       setData(d);
       setTempMembers(d.team.members || []);
       loadSubmissions(d.team._id);
@@ -483,10 +485,10 @@ const UserDashboard = () => {
                 <label
                   htmlFor="model-upload"
                   className={`px-7 py-3.5 rounded-xl font-bold transition-all flex items-center gap-2 text-sm ${uploadOpen === false
-                      ? 'bg-gray-100 text-gray-400 cursor-not-allowed border border-gray-200'
-                      : uploading
-                        ? 'bg-gray-100 text-gray-400 cursor-wait'
-                        : 'bg-[#1e3a8a] hover:bg-blue-800 text-white shadow-md hover:shadow-lg cursor-pointer'
+                    ? 'bg-gray-100 text-gray-400 cursor-not-allowed border border-gray-200'
+                    : uploading
+                      ? 'bg-gray-100 text-gray-400 cursor-wait'
+                      : 'bg-[#1e3a8a] hover:bg-blue-800 text-white shadow-md hover:shadow-lg cursor-pointer'
                     }`}
                 >
                   {uploadOpen === false ? (
