@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../App';
-import ShinyText from './ShinyText';
 import { logoutUser } from '../services/auth';
 
 const Navbar: React.FC = () => {
@@ -53,7 +52,7 @@ const Navbar: React.FC = () => {
           <Link to="/" className="flex items-center gap-3 group">
             <img src="/sp2-logo.svg" alt="SP2 Logo" className="w-10 h-10 object-contain" />
             <div className="flex flex-col">
-              <ShinyText text="SONA POWER PREDICT" disabled={false} speed={3} className="nav-logo-text text-sm tracking-wide leading-tight" />
+              <span className="nav-logo-text text-sm tracking-wide leading-tight">SONA POWER PREDICT</span>
               <span className="text-[10px] text-gray-400 leading-tight hidden sm:block">IPL PowerPlay Score Prediction Hackathon</span>
             </div>
           </Link>

@@ -11,6 +11,7 @@ import {
     where,
     orderBy,
     Timestamp,
+    writeBatch
 } from "firebase/firestore";
 import { createUserWithEmailAndPassword, signOut } from "firebase/auth";
 import { db, auth } from "../firebase";
@@ -225,11 +226,41 @@ export async function adminAction(
     teamId: string,
     value?: any
 ) {
+    if (action === 'bulkApprove') {
+        const snap = await getDocs(query(collection(db, 'teams'), where('status', '==', 'Pending')));
+        const batch = writeBatch(db);
+        snap.forEach(doc => {
+            if (doc.data().uid) batch.update(doc.ref, { status: 'Approved' });
+        });
+        await batch.commit();
+        return { count: snap.size };
+    }
+    
+    if (action === 'cleanIncompleteTeams') {
+        const snap = await getDocs(query(collection(db, 'teams'), where('setupComplete', '==', false)));
+        let count = 0;
+        for (const teamDoc of snap.docs) {
+            // Only clean if older than 1 hour to allow people to fill the form
+            const ts = teamDoc.data().createdAt;
+            if (ts) {
+                const date = ts.toDate ? ts.toDate() : new Date(ts);
+                const hrs = (new Date().getTime() - date.getTime()) / (1000 * 60 * 60);
+                if (hrs > 1) {
+                    await deleteDoc(teamDoc.ref);
+                    count++;
+                }
+            }
+        }
+        return { count };
+    }
+
     const ref = doc(db, "teams", teamId);
     if (action === "kick") {
         await deleteDoc(ref);
     } else if (action === "score") {
         await updateDoc(ref, { score: Number(value) });
+    } else if (action === "markPaid") {
+        await updateDoc(ref, { status: 'Paid' });
     }
 }
 

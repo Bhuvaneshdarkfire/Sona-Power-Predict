@@ -5,7 +5,7 @@ import {
   Megaphone, DollarSign, Send, Plus, Play, Trophy,
   Loader2, AlertCircle, BarChart3, Clock, Search,
   Mail, Eye, ChevronDown, ChevronUp, RefreshCw,
-  FileText, Hash, User, Building, Image
+  FileText, Calendar, Hash, User, Building, Image
 } from 'lucide-react';
 import Modal from './Modal';
 import { getAdminData, saveSetting, postAnnouncement, adminAction, approveTeam, getSponsors, addSponsor, deleteSponsor } from '../services/firestore';
@@ -170,11 +170,47 @@ const AdminDashboard = () => {
         } catch {
           setModal({ isOpen: true, title: 'Team Approved!', message: `${selectedTeam.teamName} approved. Email send failed — send manually from team details.`, type: 'success' });
         }
+      } else if (action === 'markPaid') {
+        await adminAction('markPaid', selectedTeam._id);
+        setModal({ isOpen: true, title: 'Payment Marked', message: `${selectedTeam.teamName} has been marked as Paid.`, type: 'success' });
       }
       setSelectedTeam(null);
       fetchData();
     } catch (err) {
       setModal({ isOpen: true, title: 'Error', message: 'Action failed.', type: 'error' });
+    }
+  };
+
+  const handleBulkApprove = async () => {
+    if (!confirm('Are you sure you want to approve ALL pending teams? This will not auto-send emails.')) return;
+    try {
+      const res = await adminAction('bulkApprove', '');
+      setModal({ isOpen: true, title: 'Bulk Approve Complete', message: `Successfully approved ${(res as any)?.count || 0} pending teams.`, type: 'success' });
+      fetchData();
+    } catch (err: any) {
+      setModal({ isOpen: true, title: 'Error', message: err.message || 'Bulk approve failed.', type: 'error' });
+    }
+  };
+
+  const handleCleanIncomplete = async () => {
+    if (!confirm('Are you sure you want to purge all incomplete team setups older than 1 hour?')) return;
+    try {
+      const res = await adminAction('cleanIncompleteTeams', '');
+      setModal({ isOpen: true, title: 'Cleanup Complete', message: `Removed ${(res as any)?.count || 0} incomplete teams.`, type: 'info' });
+      fetchData();
+    } catch (err: any) {
+      setModal({ isOpen: true, title: 'Error', message: err.message || 'Cleanup failed.', type: 'error' });
+    }
+  };
+
+  const handleResetMatch = async (matchId: string) => {
+    if (!confirm('Are you sure you want to reset this match to Live? Scores will be cleared.')) return;
+    try {
+      await updateMatch(matchId, { status: 'live', actualRunsInning1: null, actualRunsInning2: null, evaluatedAt: null });
+      setModal({ isOpen: true, title: 'Match Reset', message: 'Match is live again and scores were cleared.', type: 'info' });
+      fetchMatches();
+    } catch (err: any) {
+      setModal({ isOpen: true, title: 'Error', message: err.message || 'Reset failed.', type: 'error' });
     }
   };
 
@@ -452,11 +488,17 @@ const AdminDashboard = () => {
                 <input value={teamSearch} onChange={e => setTeamSearch(e.target.value)} placeholder="Search teams, emails, institutes..." className={`${inputCls} !pl-10`} />
               </div>
               <div className="flex gap-1 bg-white rounded-xl p-1 border border-gray-200 w-fit">
-                {(['all', 'Pending', 'Approved', 'Paid'] as const).map(f => (
-                  <button key={f} onClick={() => setTeamFilter(f)} className={`px-3 py-1.5 rounded-lg text-xs font-bold transition ${teamFilter === f ? 'bg-[#1e3a8a] text-white' : 'text-gray-500 hover:bg-gray-50'}`}>
-                    {f === 'all' ? `All (${data.teams.length})` : `${f} (${data.teams.filter(t => t.status === f).length})`}
-                  </button>
-                ))}
+                <div className="flex items-center gap-2">
+                  {(['all', 'Pending', 'Approved', 'Paid'] as const).map(f => (
+                    <button key={f} onClick={() => setTeamFilter(f)} className={`px-3 py-1.5 rounded-lg text-xs font-bold transition ${teamFilter === f ? 'bg-[#1e3a8a] text-white' : 'text-gray-500 hover:bg-gray-50'}`}>
+                      {f === 'all' ? `All (${data.teams.length})` : `${f} (${data.teams.filter(t => t.status === f).length})`}
+                    </button>
+                  ))}
+                </div>
+                <div className="flex items-center gap-2 flex-wrap">
+                  <button onClick={handleBulkApprove} className="bg-green-50 text-green-600 border border-green-200 px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-green-100 transition flex items-center gap-1.5 whitespace-nowrap"><CheckCircle size={14} /> Bulk Approve Pending</button>
+                  <button onClick={handleCleanIncomplete} className="bg-red-50 text-red-600 border border-red-200 px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-red-100 transition flex items-center gap-1.5 whitespace-nowrap"><Trash2 size={14} /> Purge Incomplete (&lt;1 hr)</button>
+                </div>
               </div>
             </div>
 
@@ -490,25 +532,64 @@ const AdminDashboard = () => {
                       {/* Expanded Detail */}
                       {expandedTeam === team._id && (
                         <div className="px-4 pb-4 bg-gray-50/50 border-t border-gray-100">
-                          <div className="grid md:grid-cols-3 gap-4 mt-4">
-                            {/* Team Info */}
-                            <div className="bg-white rounded-xl p-4 border border-gray-100">
-                              <h4 className="text-xs font-bold text-gray-500 uppercase mb-3 flex items-center gap-1"><User size={12} /> Team Details</h4>
+                          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                            {/* Team Layout -> Leader Info */}
+                            <div className="bg-white rounded-xl p-4 border border-gray-100 shadow-sm">
+                              <h4 className="text-xs font-bold text-[#1e3a8a] uppercase mb-3 flex items-center gap-1.5"><User size={14} /> Leader Details</h4>
                               <div className="space-y-2 text-xs">
-                                <div><span className="text-gray-400">Captain:</span> <span className="text-gray-900 font-medium">{team.captainName || team.leaderDetails?.name || '—'}</span></div>
+                                <div><span className="text-gray-400">Name:</span> <span className="text-gray-900 font-bold">{team.captainName || team.leaderDetails?.name || '—'}</span></div>
                                 <div><span className="text-gray-400">Email:</span> <span className="text-gray-900 font-medium">{team.captainEmail}</span></div>
+                                <div><span className="text-gray-400">Phone/WA:</span> <span className="text-gray-900 font-mono font-medium">{team.leaderDetails?.whatsappNumber || '—'}</span></div>
                                 <div><span className="text-gray-400">Institute:</span> <span className="text-gray-900 font-medium">{team.institute || team.leaderDetails?.collegeName || '—'}</span></div>
-                                <div><span className="text-gray-400">Registered:</span> <span className="text-gray-900 font-medium">{formatDate(team.createdAt)}</span></div>
-                                <div><span className="text-gray-400">UID:</span> <span className="text-gray-600 font-mono text-[10px]">{team.uid || '—'}</span></div>
+                                <div><span className="text-gray-400">Department:</span> <span className="text-gray-900">{team.leaderDetails?.department || '—'}</span></div>
+                                <div><span className="text-gray-400">Year:</span> <span className="text-gray-900">{team.leaderDetails?.year || '—'}</span></div>
+                                <div><span className="text-gray-400">State/PIN:</span> <span className="text-gray-900">{team.leaderDetails?.collegeState || '—'} - {team.leaderDetails?.collegePincode || '—'}</span></div>
+                                <div className="pt-2 mt-2 border-t border-gray-100">
+                                  <span className="text-gray-400">Registered:</span> <span className="text-gray-900">{formatDate(team.createdAt)}</span>
+                                </div>
+                                <div><span className="text-gray-400">Account UID:</span> <span className="text-gray-600 font-mono text-[9px]">{team.uid || '—'}</span></div>
                               </div>
-                              {team.members && (
-                                <div className="mt-3 pt-3 border-t border-gray-100">
-                                  <p className="text-[10px] font-bold text-gray-400 uppercase mb-1">Members</p>
-                                  {team.members.filter((m: string) => m).map((m: string, i: number) => (
-                                    <p key={i} className="text-xs text-gray-600">{i + 1}. {m}</p>
+                            </div>
+                            
+                            {/* Member Details */}
+                            <div className="bg-white rounded-xl p-4 border border-gray-100 shadow-sm">
+                              <h4 className="text-xs font-bold text-[#1e3a8a] uppercase mb-3 flex items-center gap-1.5"><Users size={14} /> Members & Workshop</h4>
+                              {team.memberDetails && Array.isArray(team.memberDetails) && team.memberDetails.length > 0 ? (
+                                <div className="space-y-4">
+                                  {team.memberDetails.map((m: any, i: number) => (
+                                    <div key={i} className="text-xs relative pl-3 border-l-2 border-blue-200">
+                                      <p className="font-bold text-gray-900 mb-0.5">{i+1}. {m.name}</p>
+                                      <p className="text-gray-500">{m.department} · {m.year}</p>
+                                      <p className="text-gray-500 font-mono text-[10px] mt-0.5">📞 {m.whatsappNumber}</p>
+                                    </div>
                                   ))}
                                 </div>
+                              ) : team.members ? (
+                                <div className="space-y-1">
+                                  {team.members.filter((m: string) => m).map((m: string, i: number) => (
+                                    <p key={i} className="text-xs text-gray-700">{i + 1}. {m} <em className="text-gray-400">(legacy format)</em></p>
+                                  ))}
+                                </div>
+                              ) : (
+                                <p className="text-xs text-gray-400 italic">No additional members.</p>
                               )}
+                              
+                              <div className="mt-4 pt-4 border-t border-gray-100">
+                                <h5 className="text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-2">Workshop Preference</h5>
+                                {team.workshopPreference ? (
+                                  team.workshopPreference.willing ? (
+                                    <span className="inline-flex items-center gap-1.5 bg-green-50 text-green-700 border border-green-200 px-2 py-1 rounded text-xs font-bold">
+                                      ✓ Attending • {team.workshopPreference.mode === 'online' ? '💻 Online' : '🏫 Offline'}
+                                    </span>
+                                  ) : (
+                                    <span className="inline-flex items-center gap-1.5 bg-gray-50 text-gray-500 border border-gray-200 px-2 py-1 rounded text-xs font-medium">
+                                      ✕ Not Attending
+                                    </span>
+                                  )
+                                ) : (
+                                  <span className="text-xs text-gray-400">Not selected yet.</span>
+                                )}
+                              </div>
                             </div>
 
                             {/* Submissions */}
@@ -606,6 +687,11 @@ const AdminDashboard = () => {
 
                     {/* Match Actions */}
                     <div className="px-5 pb-4 flex flex-wrap gap-2">
+                       {match.status === 'completed' && (
+                         <button onClick={() => handleResetMatch(match.id)} className="bg-red-50 text-red-600 border border-red-200 px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-red-500 hover:text-white transition flex items-center gap-1">
+                            Reset to Live
+                         </button>
+                       )}
                       <button onClick={() => { setShowScoreModal(match); setScoreInput({ actualRunsInning1: match.actualRunsInning1?.toString() || '', actualRunsInning2: match.actualRunsInning2?.toString() || '' }); }}
                         className="bg-yellow-50 text-yellow-600 border border-yellow-200 px-3 py-1.5 rounded-lg text-xs font-bold hover:bg-yellow-500 hover:text-white transition flex items-center gap-1">
                         <Hash size={12} /> Set Scores

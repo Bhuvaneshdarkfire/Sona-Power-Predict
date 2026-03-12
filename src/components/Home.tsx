@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import { getPublicData, getSponsors } from '../services/firestore';
 import { listMatches } from '../services/api';
 import { useAuth } from '../App';
-import StarBorder from './StarBorder';
-import Aurora from './Aurora';
 
 /* ─── Cricket Pitch SVG (geometric minimal) ─── */
 const CricketPitchSVG = () => (
@@ -71,13 +69,8 @@ const Home: React.FC = () => {
   return (
     <div>
       {/* ═══ HERO SECTION ═══ */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-cream via-white to-sky">
-        {/* Animated Background */}
-        <div className="absolute inset-0 z-0 opacity-40">
-          <Aurora colorStops={['#1E40AF', '#DBEAFE', '#F59E0B']} amplitude={0.5} speed={0.5} />
-        </div>
-        
-        <div className="relative z-10 max-w-container mx-auto px-4 lg:px-8 py-16 lg:py-24">
+      <section className="bg-gradient-to-br from-cream via-white to-sky">
+        <div className="max-w-container mx-auto px-4 lg:px-8 py-16 lg:py-24">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Copy */}
             <div>
@@ -107,17 +100,17 @@ const Home: React.FC = () => {
                   </a>
                 )}
               </div>
-              <div className="flex flex-wrap gap-4 items-center">
+              <div className="flex flex-wrap gap-4">
                 {user ? (
-                  <StarBorder as="button" color="#1E40AF" speed="4s" onClick={() => window.location.href = role === 'admin' ? '/admin' : '/user-dashboard'}>
+                  <Link to={role === 'admin' ? '/admin' : '/user-dashboard'} className="btn-primary">
                     Dashboard
-                  </StarBorder>
+                  </Link>
                 ) : (
-                  <StarBorder as="button" color="#F59E0B" speed="4s" onClick={() => window.location.href = '/register'}>
+                  <Link to="/register" className="btn-primary">
                     Register Now
-                  </StarBorder>
+                  </Link>
                 )}
-                <Link to="/resources" className="btn-outline h-[58px] bg-white/80 backdrop-blur-sm">
+                <Link to="/resources" className="btn-outline">
                   View Rules
                 </Link>
               </div>
