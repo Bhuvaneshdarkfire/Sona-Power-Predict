@@ -50,11 +50,9 @@ const Navbar: React.FC = () => {
         <div className="max-w-container mx-auto px-4 lg:px-8 flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-9 h-9 bg-royal rounded-lg flex items-center justify-center">
-              <span className="text-white text-lg">🏏</span>
-            </div>
+            <img src="/sp2-logo.svg" alt="SP2 Logo" className="w-10 h-10 object-contain" />
             <div className="flex flex-col">
-              <span className="font-heading font-bold text-slate text-sm tracking-wide leading-tight">SONA POWER PREDICT</span>
+              <span className="nav-logo-text text-sm tracking-wide leading-tight">SONA POWER PREDICT</span>
               <span className="text-[10px] text-gray-400 leading-tight hidden sm:block">IPL PowerPlay Score Prediction Hackathon</span>
             </div>
           </Link>

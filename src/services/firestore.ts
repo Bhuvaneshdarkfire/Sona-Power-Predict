@@ -232,3 +232,24 @@ export async function adminAction(
         await updateDoc(ref, { score: Number(value) });
     }
 }
+
+// ─── 12. SPONSORS ────────────────────────────────────────────
+const sponsorsCol = () => collection(db, "sponsors");
+
+export async function getSponsors() {
+    const snap = await getDocs(query(sponsorsCol(), orderBy("order", "asc")));
+    return snap.docs.map((d) => ({ id: d.id, ...d.data() }));
+}
+
+export async function addSponsor(data: { name: string; logoSvg: string; website: string; order?: number }) {
+    return addDoc(sponsorsCol(), {
+        ...data,
+        order: data.order ?? 0,
+        createdAt: Timestamp.now(),
+    });
+}
+
+export async function deleteSponsor(sponsorId: string) {
+    await deleteDoc(doc(db, "sponsors", sponsorId));
+}
+

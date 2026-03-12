@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { getPublicData } from '../services/firestore';
+import { getPublicData, getSponsors } from '../services/firestore';
 import { listMatches } from '../services/api';
 import { useAuth } from '../App';
 
@@ -52,6 +52,7 @@ const Home: React.FC = () => {
   const { user, role } = useAuth();
   const [leaderboard, setLeaderboard] = useState<any[]>([]);
   const [recentMatches, setRecentMatches] = useState<any[]>([]);
+  const [sponsors, setSponsors] = useState<any[]>([]);
 
   useEffect(() => {
     getPublicData()
@@ -60,6 +61,9 @@ const Home: React.FC = () => {
     listMatches()
       .then(data => setRecentMatches((data.matches || []).slice(-3).reverse()))
       .catch(err => console.error('Matches fetch:', err));
+    getSponsors()
+      .then(data => setSponsors(data))
+      .catch(err => console.error('Sponsors fetch:', err));
   }, []);
 
   return (
@@ -74,7 +78,7 @@ const Home: React.FC = () => {
                 Department of Computer Science · Sona College of Technology
               </p>
               <h1 className="font-heading text-4xl lg:text-5xl font-bold text-slate leading-tight mb-5">
-                National Level IPL PowerPlay Score Prediction <span className="text-royal">Hackathon</span>
+                National Level IPL PowerPlay Score Prediction <span className="shine-text">Hackathon</span>
               </h1>
               <p className="text-gray-600 text-lg mb-8 leading-relaxed max-w-lg">
                 Submit your Python prediction model. Compete against teams across the country. Climb the live evaluation leaderboard.
@@ -82,9 +86,19 @@ const Home: React.FC = () => {
               {/* Sponsor Badge */}
               <div className="flex items-center gap-3 mb-5">
                 <span className="text-gray-400 text-sm font-medium uppercase tracking-wider">Sponsored by</span>
-                <a href="https://zentropytech.com" target="_blank" rel="noopener noreferrer" className="ml-1">
-                  <img src="/zentropy-logo.png" alt="Zentropy Technologies" style={{ height: '160px', minWidth: '200px' }} className="object-contain" />
-                </a>
+                {sponsors.length > 0 ? sponsors.slice(0, 2).map((s: any) => (
+                  <a key={s.id} href={s.website || '#'} target="_blank" rel="noopener noreferrer" className="ml-1">
+                    {s.logoSvg ? (
+                      <img src={s.logoSvg} alt={s.name} style={{ height: '80px', minWidth: '120px' }} className="object-contain" />
+                    ) : (
+                      <span className="text-royal font-bold text-lg">{s.name}</span>
+                    )}
+                  </a>
+                )) : (
+                  <a href="https://zentropytech.com" target="_blank" rel="noopener noreferrer" className="ml-1">
+                    <img src="/zentropy-logo.png" alt="Zentropy Technologies" style={{ height: '160px', minWidth: '200px' }} className="object-contain" />
+                  </a>
+                )}
               </div>
               <div className="flex flex-wrap gap-4">
                 {user ? (
@@ -266,9 +280,19 @@ const Home: React.FC = () => {
         <div className="max-w-container mx-auto px-4 lg:px-8 text-center">
           <p className="text-gray-400 text-xs font-heading font-medium uppercase tracking-wider mb-3">Sponsored By</p>
           <div className="flex justify-center items-center gap-8 flex-wrap">
-            <a href="https://zentropytech.com" target="_blank" rel="noopener noreferrer" className="group transition-transform hover:scale-105">
-              <img src="/zentropy-logo.png" alt="Zentropy Technologies" className="h-24 object-contain" />
-            </a>
+            {sponsors.length > 0 ? sponsors.map((s: any) => (
+              <a key={s.id} href={s.website || '#'} target="_blank" rel="noopener noreferrer" className="group transition-transform hover:scale-105">
+                {s.logoSvg ? (
+                  <img src={s.logoSvg} alt={s.name} className="h-24 object-contain" />
+                ) : (
+                  <span className="text-royal font-heading font-bold text-xl">{s.name}</span>
+                )}
+              </a>
+            )) : (
+              <a href="https://zentropytech.com" target="_blank" rel="noopener noreferrer" className="group transition-transform hover:scale-105">
+                <img src="/zentropy-logo.png" alt="Zentropy Technologies" className="h-24 object-contain" />
+              </a>
+            )}
           </div>
         </div>
       </section>

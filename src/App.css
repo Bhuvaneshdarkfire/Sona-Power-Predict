@@ -297,3 +297,52 @@ a:hover {
 .site-footer a:hover {
   color: #ffffff;
 }
+
+/* ─── Shine / Shimmer Text Effect ─── */
+@keyframes shine {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.shine-text {
+  background: linear-gradient(
+    90deg,
+    var(--royal) 0%,
+    var(--royal) 35%,
+    #60a5fa 50%,
+    var(--royal) 65%,
+    var(--royal) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+}
+
+.shine-text-gold {
+  background: linear-gradient(
+    90deg,
+    var(--saffron-dark) 0%,
+    var(--saffron-dark) 35%,
+    #fcd34d 50%,
+    var(--saffron-dark) 65%,
+    var(--saffron-dark) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+}
+
+/* ─── Navbar logo text ─── */
+.nav-logo-text {
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb, #f59e0b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

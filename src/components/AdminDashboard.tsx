@@ -5,10 +5,10 @@ import {
   Megaphone, DollarSign, Send, Plus, Play, Trophy,
   Loader2, AlertCircle, BarChart3, Clock, Search,
   Mail, Eye, ChevronDown, ChevronUp, RefreshCw,
-  FileText, Calendar, Hash, User, Building
+  FileText, Calendar, Hash, User, Building, Image
 } from 'lucide-react';
 import Modal from './Modal';
-import { getAdminData, saveSetting, postAnnouncement, adminAction, approveTeam } from '../services/firestore';
+import { getAdminData, saveSetting, postAnnouncement, adminAction, approveTeam, getSponsors, addSponsor, deleteSponsor } from '../services/firestore';
 import { logoutUser } from '../services/auth';
 import { listMatches, createMatch, updateMatch, evaluateMatch, getPredictions, uploadMatchCSV, getSubmissions } from '../services/api';
 
@@ -20,7 +20,7 @@ import { listMatches, createMatch, updateMatch, evaluateMatch, getPredictions, u
 const AdminDashboard = () => {
   const navigate = useNavigate();
   const [data, setData] = useState<{ teams: any[], announcements: any[], settings: any[] }>({ teams: [], announcements: [], settings: [] });
-  const [activeTab, setActiveTab] = useState<'overview' | 'teams' | 'matches' | 'announce' | 'mail'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'teams' | 'matches' | 'announce' | 'sponsors' | 'mail'>('overview');
   const [loading, setLoading] = useState(true);
 
   // Settings State
@@ -57,6 +57,11 @@ const AdminDashboard = () => {
   const [teamSubmissions, setTeamSubmissions] = useState<Record<string, any[]>>({});
   const [sendingEmail, setSendingEmail] = useState<string | null>(null);
 
+  // Sponsor State
+  const [sponsors, setSponsors] = useState<any[]>([]);
+  const [newSponsor, setNewSponsor] = useState({ name: '', website: '', logoSvg: '' });
+  const [addingSponsor, setAddingSponsor] = useState(false);
+
   useEffect(() => { fetchData(); }, []);
 
   const fetchData = async () => {
@@ -70,7 +75,15 @@ const AdminDashboard = () => {
       setPaymentAmount(pAmt ? (pAmt as any).value : '0');
     } catch (e) { console.error("Fetch error", e); }
     await fetchMatches();
+    await fetchSponsors();
     setLoading(false);
+  };
+
+  const fetchSponsors = async () => {
+    try {
+      const s = await getSponsors();
+      setSponsors(s);
+    } catch (e) { console.error('Sponsors fetch error', e); }
   };
 
   const fetchMatches = async () => {
@@ -88,6 +101,35 @@ const AdminDashboard = () => {
     await saveSetting(key, value);
     fetchData();
     if (key === 'payment_amount') setModal({ isOpen: true, title: 'Saved', message: 'Payment amount updated.', type: 'success' });
+  };
+
+  const handleAddSponsor = async () => {
+    if (!newSponsor.name) {
+      setModal({ isOpen: true, title: 'Error', message: 'Sponsor name is required.', type: 'error' });
+      return;
+    }
+    setAddingSponsor(true);
+    try {
+      await addSponsor(newSponsor);
+      setNewSponsor({ name: '', website: '', logoSvg: '' });
+      fetchSponsors();
+      setModal({ isOpen: true, title: 'Sponsor Added', message: 'Sponsor has been added to the site.', type: 'success' });
+    } catch (err: any) {
+      setModal({ isOpen: true, title: 'Error', message: err.message, type: 'error' });
+    } finally {
+      setAddingSponsor(false);
+    }
+  };
+
+  const handleDeleteSponsor = async (id: string) => {
+    if (!confirm('Are you sure you want to remove this sponsor?')) return;
+    try {
+      await deleteSponsor(id);
+      fetchSponsors();
+      setModal({ isOpen: true, title: 'Sponsor Removed', message: 'Sponsor has been deleted.', type: 'info' });
+    } catch (err: any) {
+      setModal({ isOpen: true, title: 'Error', message: err.message, type: 'error' });
+    }
   };
 
   const handlePostAnnouncement = async () => {
@@ -116,7 +158,18 @@ const AdminDashboard = () => {
           return;
         }
         await approveTeam(selectedTeam._id, uid);
-        setModal({ isOpen: true, title: 'Team Approved!', message: `${selectedTeam.teamName} has been approved.`, type: 'success' });
+        // Auto-send credentials email after approval
+        try {
+          const API_BASE = import.meta.env.VITE_API_BASE || '/api';
+          await fetch(`${API_BASE}/send-credentials`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ to: selectedTeam.captainEmail, teamName: selectedTeam.teamName, email: selectedTeam.captainEmail, password: '(set during registration)' }),
+          });
+          setModal({ isOpen: true, title: 'Team Approved! 📧', message: `${selectedTeam.teamName} approved and credentials email sent to ${selectedTeam.captainEmail}.`, type: 'success' });
+        } catch {
+          setModal({ isOpen: true, title: 'Team Approved!', message: `${selectedTeam.teamName} approved. Email send failed — send manually from team details.`, type: 'success' });
+        }
       }
       setSelectedTeam(null);
       fetchData();
@@ -291,6 +344,7 @@ const AdminDashboard = () => {
             { id: 'teams', icon: Users, label: 'Teams', badge: stats.pendingTeams },
             { id: 'matches', icon: Trophy, label: 'Matches' },
             { id: 'announce', icon: Megaphone, label: 'Announcements' },
+            { id: 'sponsors', icon: Image, label: 'Sponsors' },
             { id: 'mail', icon: Settings, label: 'Settings' }
           ].map(tab => (
             <button key={tab.id} onClick={() => setActiveTab(tab.id as any)} className={`px-4 py-2 rounded-lg text-sm font-bold flex items-center gap-2 transition whitespace-nowrap ${activeTab === tab.id ? 'bg-[#1e3a8a] text-white shadow-sm' : 'text-gray-500 hover:text-gray-900 hover:bg-gray-50'}`}>
@@ -617,6 +671,66 @@ const AdminDashboard = () => {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        )}
+
+        {/* ═══ TAB: SPONSORS ═══ */}
+        {activeTab === 'sponsors' && (
+          <div className="grid lg:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm col-span-1 h-fit">
+              <h2 className="text-lg font-bold text-gray-900 mb-5 flex items-center gap-2"><Image className="text-blue-600" size={20} /> Add New Sponsor</h2>
+              <div className="space-y-4">
+                <div>
+                  <label className="text-xs font-bold text-gray-500 uppercase block mb-1">Company Name</label>
+                  <input value={newSponsor.name} onChange={e => setNewSponsor({ ...newSponsor, name: e.target.value })} className={inputCls} placeholder="e.g. Zentropy Technologies" />
+                </div>
+                <div>
+                  <label className="text-xs font-bold text-gray-500 uppercase block mb-1">Website URL (Optional)</label>
+                  <input value={newSponsor.website} onChange={e => setNewSponsor({ ...newSponsor, website: e.target.value })} className={inputCls} placeholder="https://zentropytech.com" />
+                </div>
+                <div>
+                  <label className="text-xs font-bold text-gray-500 uppercase block mb-1">Logo URL or SVG Code (Optional)</label>
+                  <textarea value={newSponsor.logoSvg} onChange={e => setNewSponsor({ ...newSponsor, logoSvg: e.target.value })} className={`${inputCls} h-32 resize-none font-mono text-xs`} placeholder="Paste SVG code or image URL here..." />
+                </div>
+                <button disabled={addingSponsor} onClick={handleAddSponsor} className="w-full bg-[#1e3a8a] disabled:bg-blue-300 hover:bg-blue-800 text-white py-2.5 rounded-xl text-sm font-bold shadow-md transition flex justify-center items-center gap-2">
+                  {addingSponsor ? <Loader2 size={16} className="animate-spin" /> : <Plus size={16} />} Add Sponsor
+                </button>
+              </div>
+            </div>
+            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm col-span-2">
+              <h2 className="text-lg font-bold text-gray-900 mb-5 flex items-center gap-2"><Building className="text-blue-600" size={20} /> Current Sponsors</h2>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {sponsors.length === 0 ? (
+                  <div className="col-span-2 text-center py-10 bg-gray-50 rounded-xl border border-dashed border-gray-200 text-gray-400">
+                    <p>No custom sponsors added.</p>
+                    <p className="text-xs mt-1">Default (Zentropy) will be shown on the home page.</p>
+                  </div>
+                ) : (
+                  sponsors.map((s) => (
+                    <div key={s.id} className="p-4 border border-gray-100 rounded-xl bg-gray-50 flex flex-col justify-between">
+                      <div className="flex items-start justify-between mb-3">
+                        {s.logoSvg ? (
+                          <div className="h-12 w-24 bg-white rounded border border-gray-200 p-1 flex items-center justify-center overflow-hidden">
+                            {s.logoSvg.startsWith('<svg') ? (
+                              <div className="w-full h-full" dangerouslySetInnerHTML={{ __html: s.logoSvg }} />
+                            ) : (
+                              <img src={s.logoSvg} alt={s.name} className="max-h-full max-w-full object-contain" />
+                            )}
+                          </div>
+                        ) : (
+                          <div className="h-12 w-24 bg-blue-50 text-blue-600 font-bold text-xs rounded flex items-center justify-center">No Logo</div>
+                        )}
+                        <button onClick={() => handleDeleteSponsor(s.id)} className="text-red-400 hover:text-red-600 transition bg-white p-1.5 rounded-lg border border-red-100"><Trash2 size={14} /></button>
+                      </div>
+                      <div>
+                        <p className="font-bold text-gray-900 text-sm">{s.name}</p>
+                        {s.website && <a href={s.website} target="_blank" rel="noopener noreferrer" className="text-[10px] text-blue-500 hover:underline truncate block">{s.website}</a>}
+                      </div>
+                    </div>
+                  ))
+                )}
+              </div>
             </div>
           </div>
         )}
